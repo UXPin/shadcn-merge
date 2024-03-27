@@ -1,0 +1,218 @@
+{
+  "categorizedComponents": [
+    {
+      "components": [
+        {
+          "info": {
+            "dirPath": "src/components/ui/button",
+            "implementation": {
+              "framework": "reactjs",
+              "path": "src/components/ui/button/button.tsx",
+              "lang": "typescript"
+            },
+            "presets": [
+              {
+                "path": "src/components/ui/button/presets/0-default.jsx"
+              }
+            ]
+          },
+          "defaultExported": true,
+          "name": "Button",
+          "properties": [
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "asChild",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              },
+              "defaultValue": {
+                "value": false
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "children",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "variant",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "default"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "destructive"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "outline"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "secondary"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ghost"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "link"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "size",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "default"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sm"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "lg"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "icon"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "disabled",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "name",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "type",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "submit"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "reset"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "button"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "tailwindClasses",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": [],
+          "documentation": {
+            "examples": []
+          },
+          "presets": [
+            {
+              "elements": {
+                "button-1": {
+                  "name": "Button",
+                  "props": {
+                    "variant": "outline",
+                    "children": "Outlined"
+                  }
+                }
+              },
+              "name": "default",
+              "rootId": "button-1"
+            }
+          ]
+        }
+      ],
+      "name": "General"
+    }
+  ],
+  "name": "Example Design System",
+  "vcs": {
+    "branchName": "master",
+    "commitHash": "0ad04ed1a8ea55b23a64c39176fb4a19c75d7542",
+    "paths": {
+      "configPath": "/Users/jackbehar/Documents/Repos/ShadCn-Merge/my-app/uxpin.config.js",
+      "projectRoot": "/Users/jackbehar/Documents/Repos/ShadCn-Merge/my-app"
+    }
+  }
+}
