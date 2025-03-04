@@ -13,6 +13,7 @@ module.exports = {
           'src/components/CardHeader/CardHeader.jsx',
           'src/components/CardTitle/CardTitle.jsx',
           'src/components/Checkbox/Checkbox.jsx',
+          'src/components/Slider/Slider.jsx',
         ],
       },
     ],
