@@ -12,6 +12,7 @@ module.exports = {
           'src/components/CardFooter/CardFooter.jsx',
           'src/components/CardHeader/CardHeader.jsx',
           'src/components/CardTitle/CardTitle.jsx',
+          'src/components/Checkbox/Checkbox.jsx',
         ],
       },
     ],
