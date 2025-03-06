@@ -3,18 +3,7 @@ module.exports = {
     categories: [
       {
         name: 'General',
-        include: [
-          'src/components/Button/Button.tsx',
-          'src/components/Badge/Badge.jsx',
-          'src/components/Card/Card.jsx',
-          'src/components/CardContent/CardContent.jsx',
-          'src/components/CardDescription/CardDescription.jsx',
-          'src/components/CardFooter/CardFooter.jsx',
-          'src/components/CardHeader/CardHeader.jsx',
-          'src/components/CardTitle/CardTitle.jsx',
-          'src/components/Checkbox/Checkbox.jsx',
-          'src/components/Slider/Slider.jsx',
-        ],
+        include: ['src/components/Button/Button.jsx'],
       },
     ],
     wrapper: 'src/components/UXPinWrapper/UXPinWrapper.js',
