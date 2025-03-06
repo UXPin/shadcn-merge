@@ -5,10 +5,5 @@ import 'primereact/resources/themes/lara-light-cyan/theme.css';
 import 'primeicons/primeicons.css';
 
 export default function UXPinWrapper({ children }) {
-  return (
-    <PrimeReactProvider>
-      <i className='pi pi-check'></i>
-      {children}
-    </PrimeReactProvider>
-  );
+  return <PrimeReactProvider>{children}</PrimeReactProvider>;
 }
