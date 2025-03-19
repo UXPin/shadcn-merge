@@ -27,6 +27,7 @@ module.exports = {
           'src/components/CardTitle/CardTitle.jsx',
           'src/components/Checkbox/Checkbox.jsx',
           'src/components/Slider/Slider.jsx',
+          'src/components/Label/Label.jsx',
         ],
       },
     ],
