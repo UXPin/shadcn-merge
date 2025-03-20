@@ -4,6 +4,6 @@ import Label from '../Label';
 
 export default (
   <Label htmlFor='email' uxpId='label-1'>
-    Email Address
+    Label
   </Label>
 );
