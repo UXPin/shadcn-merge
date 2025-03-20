@@ -8,7 +8,12 @@ import { DropdownMenuRadioItem as DropdownMenuRadioItemM } from '../ui/dropdown-
  */
 const DropdownMenuRadioItem = ({ children, value, className, ...props }) => {
   return (
-    <DropdownMenuRadioItemM value={value} className={className} {...props}>
+    <DropdownMenuRadioItemM
+      value={value}
+      className={className}
+      {...props}
+      onSelect={(event) => event.preventDefault()}
+    >
       {children}
     </DropdownMenuRadioItemM>
   );

@@ -7,7 +7,12 @@ import { DropdownMenuCheckboxItem as DropdownMenuCheckboxItemM } from '../ui/dro
  * @uxpindescription An item that can be controlled and rendered like a checkbox.
  */
 const DropdownMenuCheckboxItem = (props) => {
-  return <DropdownMenuCheckboxItemM {...props} />;
+  return (
+    <DropdownMenuCheckboxItemM
+      {...props}
+      onSelect={(event) => event.preventDefault()}
+    />
+  );
 };
 
 DropdownMenuCheckboxItem.propTypes = {

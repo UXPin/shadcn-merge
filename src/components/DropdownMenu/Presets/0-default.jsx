@@ -12,6 +12,10 @@ import DropdownMenuSubTrigger from '../../DropdownMenuSubTrigger/DropdownMenuSub
 import DropdownMenuPortal from '../../DropdownMenuPortal/DropdownMenuPortal';
 import DropdownMenuSub from '../../DropdownMenuSub/DropdownMenuSub';
 import Button from '../../Button/Button';
+import HtmlText from '../../HtmlComponents/HtmlText/HtmlText';
+import DropdownMenuCheckboxItem from '../../DropdownMenuCheckboxItem/DropdownMenuCheckboxItem';
+import DropdownMenuRadioGroup from '../../DropdownMenuRadioGroup/DropdownMenuRadioGroup';
+import DropdownMenuRadioItem from '../../DropdownMenuRadioItem/DropdownMenuRadioItem';
 
 export default (
   // <DropdownMenu uxpId='dropdown-menu-1'>
@@ -110,19 +114,64 @@ export default (
   // </DropdownMenu>
   <DropdownMenu uxpId='dropdown-menu-1'>
     <DropdownMenuTrigger uxpId='dropdown-menu-trigger-1'>
-      Open
+      <Button variant='outline' uxpId='dropdown-menu-trigger-button-1'>
+        Open
+      </Button>
     </DropdownMenuTrigger>
     <DropdownMenuContent uxpId='dropdown-menu-content-1'>
       <DropdownMenuLabel uxpId='dropdown-menu-label-1'>
         My Account
       </DropdownMenuLabel>
+
       <DropdownMenuSeparator uxpId='dropdown-menu-separator-1' />
-      <DropdownMenuItem uxpId='dropdown-menu-item-1'>Profile</DropdownMenuItem>
-      <DropdownMenuItem uxpId='dropdown-menu-item-2'>Billing</DropdownMenuItem>
-      <DropdownMenuItem uxpId='dropdown-menu-item-3'>Team</DropdownMenuItem>
-      <DropdownMenuItem uxpId='dropdown-menu-item-4'>
-        Subscription
+      <DropdownMenuItem uxpId='dropdown-menu-item-1'>
+        <HtmlText uxpId='dropdown-menu-item-1-htmltext'>Profile</HtmlText>
+        <DropdownMenuShortcut uxpId='dropdown-menu-item-1-shortcut'>
+          ⇧⌘P
+        </DropdownMenuShortcut>
       </DropdownMenuItem>
+      <DropdownMenuItem uxpId='dropdown-menu-item-2'>
+        <HtmlText uxpId='dropdown-menu-item-2-htmltext'>Billing</HtmlText>
+        <DropdownMenuShortcut uxpId='dropdown-menu-item-2-shortcut'>
+          ⌘B
+        </DropdownMenuShortcut>
+      </DropdownMenuItem>
+      <DropdownMenuSeparator uxpId='dropdown-menu-seperator-1' />
+      <DropdownMenuItem uxpId='dropdown-menu-item-3'>Team</DropdownMenuItem>
+      <DropdownMenuSub uxpId='dropdown-menu-group-2-sub-1'>
+        <DropdownMenuSubTrigger uxpId='dropdown-menu-group-2-sub-1-trigger-1'>
+          Invite users
+        </DropdownMenuSubTrigger>
+
+        <DropdownMenuSubContent uxpId='dropdown-menu-group-2-sub-1-subcontent-1'>
+          <DropdownMenuItem uxpId='dropdown-menu-group-2-sub-1-item-1'>
+            Email
+          </DropdownMenuItem>
+          <DropdownMenuItem uxpId='dropdown-menu-group-2-sub-1-item-2'>
+            Message
+          </DropdownMenuItem>
+        </DropdownMenuSubContent>
+      </DropdownMenuSub>
+      <DropdownMenuCheckboxItem uxpId='dropdown-menu-checkbox-1'>
+        Panel Positioning
+      </DropdownMenuCheckboxItem>
+      <DropdownMenuRadioGroup
+        value='option1'
+        uxpId='dropdown-menu-radiogroup-1'
+      >
+        <DropdownMenuRadioItem
+          value='option1'
+          uxpId='dropdown-menu-radiogroup-radio-1'
+        >
+          Left
+        </DropdownMenuRadioItem>
+        <DropdownMenuRadioItem
+          value='option2'
+          uxpId='dropdown-menu-radiogroup-radio-2'
+        >
+          Right
+        </DropdownMenuRadioItem>
+      </DropdownMenuRadioGroup>
     </DropdownMenuContent>
   </DropdownMenu>
 );

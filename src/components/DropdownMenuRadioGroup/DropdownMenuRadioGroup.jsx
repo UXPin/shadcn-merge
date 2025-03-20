@@ -26,7 +26,9 @@ const DropdownMenuRadioGroup = ({
 };
 
 DropdownMenuRadioGroup.propTypes = {
-  /** The selected value in the radio group */
+  /** The selected value in the radio group
+   * @uxpinbind onValueChange 0
+   */
   value: PropTypes.string,
 
   /** Callback function when the value changes */
