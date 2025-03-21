@@ -18,6 +18,7 @@ module.exports = {
           'src/components/DropdownMenu/DropdownMenu.jsx',
           'src/components/HoverCard/HoverCard.jsx',
           'src/components/Image/Image.js',
+          'src/components/Input/Input.jsx',
           'src/components/Slider/Slider.jsx',
           'src/components/Label/Label.jsx',
           'src/components/Pagination/Pagination.jsx',
