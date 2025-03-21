@@ -29,6 +29,7 @@
     "tailwindcss-animate": "^1.0.7",
     "ts-loader": "^9.5.1",
     "typescript": "^4.4.2",
+    "vaul": "^1.1.2",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
