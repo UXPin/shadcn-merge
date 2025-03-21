@@ -11,7 +11,9 @@ const DropdownMenuSeparator = ({ className, ...props }) => {
 };
 
 DropdownMenuSeparator.propTypes = {
-  /** Change the component to the specified HTML tag or custom component. */
+  /** Change the component to the specified HTML tag or custom component.
+   * @uxpinignoreprop
+   */
   asChild: PropTypes.bool,
   /** Additional CSS classes for styling. */
   className: PropTypes.string,

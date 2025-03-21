@@ -10,7 +10,9 @@ function Slider(props) {
 }
 
 Slider.propTypes = {
-  /** If true, changes the element to render as a child. */
+  /** If true, changes the element to render as a child.
+   * @uxpinignoreprop
+   */
   asChild: PropTypes.bool,
   /** The additional CSS classes for styling. */
   className: PropTypes.string,

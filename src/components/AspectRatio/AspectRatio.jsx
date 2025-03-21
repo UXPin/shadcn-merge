@@ -16,7 +16,9 @@ function AspectRatio(props) {
 AspectRatio.propTypes = {
   /** The content of the component. */
   children: PropTypes.node,
-  /** If true, changes the element to render as a child. */
+  /** If true, changes the element to render as a child.
+   * @uxpinignoreprop
+   */
   asChild: PropTypes.bool,
   /** The desired ratio. */
   ratio: PropTypes.number,

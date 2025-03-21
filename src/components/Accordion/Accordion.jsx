@@ -15,7 +15,9 @@ const Accordion = ({ className, children, ...props }) => {
 };
 
 Accordion.propTypes = {
-  /** If true, changes the element to render as a child. */
+  /** If true, changes the element to render as a child.
+   * @uxpinignoreprop
+   */
   asChild: PropTypes.bool,
   /** Determines whether a 'single' or 'multiple' items can be expanded at a time. */
   type: PropTypes.oneOf(['single', 'multiple']).isRequired,

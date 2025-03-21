@@ -1,25 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { DropdownMenuRadioItem as DropdownMenuRadioItemM } from '../ui/dropdown-menu';
+import { MenubarRadioItem as MenubarRadioItemM } from '../ui/menubar';
 
 /**
- * @uxpindocurl https://ui.shadcn.com/docs/components/dropdown-menu
- * @uxpindescription A selectable radio item within a DropdownMenuRadioGroup.
+ * @uxpindocurl https://ui.shadcn.com/docs/components/menubar
+ * @uxpindescription Individual radio item in the menu.
  */
-const DropdownMenuRadioItem = ({ children, value, className, ...props }) => {
+const MenubarRadioItem = ({ children, className, ...props }) => {
   return (
-    <DropdownMenuRadioItemM
-      value={value}
+    <MenubarRadioItemM
       className={className}
       {...props}
       onSelect={(event) => event.preventDefault()}
     >
       {children}
-    </DropdownMenuRadioItemM>
+    </MenubarRadioItemM>
   );
 };
 
-DropdownMenuRadioItem.propTypes = {
+MenubarRadioItem.propTypes = {
   /** If true, renders the component as a child element.
    * @uxpinignoreprop
    */
@@ -34,4 +33,4 @@ DropdownMenuRadioItem.propTypes = {
   value: PropTypes.string.isRequired,
 };
 
-export default DropdownMenuRadioItem;
+export default MenubarRadioItem;

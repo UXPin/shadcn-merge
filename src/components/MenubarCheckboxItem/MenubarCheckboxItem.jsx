@@ -1,21 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { DropdownMenuCheckboxItem as DropdownMenuCheckboxItemM } from '../ui/dropdown-menu';
+import { MenubarCheckboxItem as MenubarCheckboxItemM } from '../ui/menubar';
 
 /**
- * @uxpindocurl https://ui.shadcn.com/docs/components/dropdown-menu
- * @uxpindescription An item that can be controlled and rendered like a checkbox.
+ * @uxpindocurl https://ui.shadcn.com/docs/components/menubar
+ * @uxpindescription Checkbox item for menu selection.
  */
-const DropdownMenuCheckboxItem = (props) => {
+const MenubarCheckboxItem = ({ children, className, ...props }) => {
   return (
-    <DropdownMenuCheckboxItemM
+    <MenubarCheckboxItemM
+      className={className}
       {...props}
       onSelect={(event) => event.preventDefault()}
-    />
+    >
+      {children}
+    </MenubarCheckboxItemM>
   );
 };
 
-DropdownMenuCheckboxItem.propTypes = {
+MenubarCheckboxItem.propTypes = {
   /** Change the component to the specified HTML tag or custom component.
    * @uxpinignoreprop
    */
@@ -38,4 +41,4 @@ DropdownMenuCheckboxItem.propTypes = {
   children: PropTypes.node,
 };
 
-export default DropdownMenuCheckboxItem;
+export default MenubarCheckboxItem;

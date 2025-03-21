@@ -15,7 +15,9 @@ const DropdownMenuSubTrigger = ({ children, className, ...props }) => {
 };
 
 DropdownMenuSubTrigger.propTypes = {
-  /** If true, renders the trigger as a child component. */
+  /** If true, renders the trigger as a child component.
+   * @uxpinignoreprop
+   */
   asChild: PropTypes.bool,
   /** Additional CSS classes for styling. */
   className: PropTypes.string,

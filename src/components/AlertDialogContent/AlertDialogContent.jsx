@@ -13,7 +13,9 @@ const AlertDialogContent = ({ children, ...props }) => {
 AlertDialogContent.propTypes = {
   /** The content of the component. */
   children: PropTypes.node,
-  /** Change the component to the specified HTML tag or custom component. */
+  /** Change the component to the specified HTML tag or custom component.
+   * @uxpinignoreprop
+   */
   asChild: PropTypes.bool,
   /** Always keep the content rendered. */
   forceMount: PropTypes.bool,

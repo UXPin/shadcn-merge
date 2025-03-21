@@ -15,7 +15,9 @@ const DropdownMenuItem = ({ children, disabled, className, ...props }) => {
 };
 
 DropdownMenuItem.propTypes = {
-  /** Change the component to the specified HTML tag or custom component. */
+  /** Change the component to the specified HTML tag or custom component.
+   * @uxpinignoreprop
+   */
   asChild: PropTypes.bool,
   /** When true, prevents the user from interacting with the item. */
   disabled: PropTypes.bool,
