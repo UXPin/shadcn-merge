@@ -7,11 +7,7 @@ import { CarouselNext as CarouselNextM } from '../ui/carousel';
  * @uxpindescription Button to navigate to the next item.
  */
 const CarouselNext = ({ children, className, ...props }) => {
-  return (
-    <CarouselNextM className={className} {...props}>
-      {children}
-    </CarouselNextM>
-  );
+  return <CarouselNextM className={className} {...props} />;
 };
 
 CarouselNext.propTypes = {

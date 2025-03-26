@@ -7,11 +7,7 @@ import { CarouselPrevious as CarouselPreviousM } from '../ui/carousel';
  * @uxpindescription Button to navigate to the previous item.
  */
 const CarouselPrevious = ({ children, className, ...props }) => {
-  return (
-    <CarouselPreviousM className={className} {...props}>
-      {children}
-    </CarouselPreviousM>
-  );
+  return <CarouselPreviousM className={className} {...props} />;
 };
 
 CarouselPrevious.propTypes = {
