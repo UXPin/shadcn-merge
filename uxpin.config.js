@@ -12,6 +12,7 @@ module.exports = {
           'src/components/Button/Button.tsx',
           'src/components/Badge/Badge.jsx',
           'src/components/Breadcrumb/Breadcrumb.jsx',
+          'src/components/Calendar/Calendar.jsx',
           'src/components/Card/Card.jsx',
           'src/components/Carousel/Carousel.jsx',
           'src/components/Checkbox/Checkbox.jsx',
