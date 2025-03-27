@@ -34,6 +34,7 @@ module.exports = {
           'src/components/Table/Table.jsx',
           'src/components/Tabs/Tabs.jsx',
           'src/components/Tooltip/Tooltip.jsx',
+          'src/components/Toggle/Toggle.jsx',
         ],
       },
       {
