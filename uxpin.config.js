@@ -35,6 +35,7 @@ module.exports = {
           'src/components/Tabs/Tabs.jsx',
           'src/components/Tooltip/Tooltip.jsx',
           'src/components/Toggle/Toggle.jsx',
+          'src/components/ToggleGroup/ToggleGroup.jsx',
         ],
       },
       {
@@ -190,6 +191,7 @@ module.exports = {
           'src/components/TooltipContent/TooltipContent.jsx',
           'src/components/TooltipTrigger/TooltipTrigger.jsx',
           'src/components/TooltipProvider/TooltipProvider.jsx',
+          'src/components/ToggleGroupItem/ToggleGroupItem.jsx',
         ],
       },
     ],
