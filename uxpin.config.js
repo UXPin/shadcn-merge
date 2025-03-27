@@ -32,6 +32,7 @@ module.exports = {
           'src/components/Menubar/Menubar.jsx',
           'src/components/Sheet/Sheet.jsx',
           'src/components/Table/Table.jsx',
+          'src/components/Tabs/Tabs.jsx',
         ],
       },
       {
@@ -181,6 +182,9 @@ module.exports = {
           'src/components/TableFooter/TableFooter.jsx',
           'src/components/TableBody/TableBody.jsx',
           'src/components/TableHeader/TableHeader.jsx',
+          'src/components/TabsContent/TabsContent.jsx',
+          'src/components/TabsTrigger/TabsTrigger.jsx',
+          'src/components/TabsList/TabsList.jsx',
         ],
       },
     ],
