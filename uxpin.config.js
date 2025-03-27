@@ -33,6 +33,7 @@ module.exports = {
           'src/components/Sheet/Sheet.jsx',
           'src/components/Table/Table.jsx',
           'src/components/Tabs/Tabs.jsx',
+          'src/components/Tooltip/Tooltip.jsx',
         ],
       },
       {
@@ -185,6 +186,9 @@ module.exports = {
           'src/components/TabsContent/TabsContent.jsx',
           'src/components/TabsTrigger/TabsTrigger.jsx',
           'src/components/TabsList/TabsList.jsx',
+          'src/components/TooltipContent/TooltipContent.jsx',
+          'src/components/TooltipTrigger/TooltipTrigger.jsx',
+          'src/components/TooltipProvider/TooltipProvider.jsx',
         ],
       },
     ],
