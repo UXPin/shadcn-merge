@@ -26,9 +26,7 @@ export default (
         </Card>
       </CarouselItem>
     </CarouselContent>
-    <CarouselNext uxpId='carousel-next'>Content</CarouselNext>
-    <CarouselPrevious variant='link' uxpId='carousel-previous'>
-      Content
-    </CarouselPrevious>
+    <CarouselNext uxpId='carousel-next'>Next</CarouselNext>
+    <CarouselPrevious uxpId='carousel-previous'>Previous</CarouselPrevious>
   </Carousel>
 );
