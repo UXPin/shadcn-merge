@@ -42,6 +42,7 @@ module.exports = {
           'src/components/ToggleGroup/ToggleGroup.jsx',
           'src/components/Sidebar/Sidebar.jsx',
           'src/components/RadioGroup/RadioGroup.jsx',
+          'src/components/ResizablePanelGroup/ResizablePanelGroup.jsx',
         ],
       },
       {
@@ -178,6 +179,8 @@ module.exports = {
           'src/components/PaginationPrevious/PaginationPrevious.jsx',
           'src/components/PaginationEllipsis/PaginationEllipsis.jsx',
           'src/components/RadioGroupItem/RadioGroupItem.jsx',
+          'src/components/ResizablePanel/ResizablePanel.jsx',
+          'src/components/ResizableHandle/ResizableHandle.jsx',
           'src/components/SelectScrollDownButton/SelectScrollDownButton.jsx',
           'src/components/SelectScrollUpButton/SelectScrollUpButton.jsx',
           'src/components/SelectSeparator/SelectSeparator.jsx',
