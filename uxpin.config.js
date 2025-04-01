@@ -40,6 +40,7 @@ module.exports = {
           'src/components/Skeleton/Skeleton.jsx',
           'src/components/Switch/Switch.jsx',
           'src/components/Table/Table.jsx',
+          'src/components/Textarea/Textarea.jsx',
           'src/components/Tabs/Tabs.jsx',
           'src/components/Toast/Toast.jsx',
           'src/components/Tooltip/Tooltip.jsx',
