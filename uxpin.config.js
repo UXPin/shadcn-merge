@@ -30,6 +30,7 @@ module.exports = {
           'src/components/InputOTP/InputOTP.jsx',
           'src/components/NavigationMenu/NavigationMenu.jsx',
           'src/components/Select/Select.jsx',
+          'src/components/Separator/Separator.jsx',
           'src/components/Slider/Slider.jsx',
           'src/components/Label/Label.jsx',
           'src/components/Pagination/Pagination.jsx',
