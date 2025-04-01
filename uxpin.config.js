@@ -36,6 +36,7 @@ module.exports = {
           'src/components/Popover/Popover.jsx',
           'src/components/Menubar/Menubar.jsx',
           'src/components/Sheet/Sheet.jsx',
+          'src/components/Skeleton/Skeleton.jsx',
           'src/components/Table/Table.jsx',
           'src/components/Tabs/Tabs.jsx',
           'src/components/Toast/Toast.jsx',
