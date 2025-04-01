@@ -20,6 +20,7 @@ module.exports = {
           'src/components/Command/Command.jsx',
           'src/components/CommandDialog/CommandDialog.jsx',
           'src/components/ContextMenu/ContextMenu.jsx',
+          'src/components/DataTable/DataTable.tsx',
           'src/components/Dialog/Dialog.jsx',
           'src/components/Drawer/Drawer.jsx',
           'src/components/DropdownMenu/DropdownMenu.jsx',
