@@ -35,6 +35,7 @@ module.exports = {
           'src/components/Label/Label.jsx',
           'src/components/Pagination/Pagination.jsx',
           'src/components/Popover/Popover.jsx',
+          'src/components/Progress/Progress.jsx',
           'src/components/Menubar/Menubar.jsx',
           'src/components/ScrollArea/ScrollArea.jsx',
           'src/components/Sheet/Sheet.jsx',
