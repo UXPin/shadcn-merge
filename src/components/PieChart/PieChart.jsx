@@ -2,16 +2,7 @@
 import React from 'react';
 import { Pie, PieChart as PieChartM } from 'recharts';
 import PropTypes from 'prop-types';
-
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '../ui/card';
-import {
-  ChartConfig,
   ChartContainer,
   ChartLegend,
   ChartLegendContent,
@@ -20,13 +11,14 @@ import {
 } from '../ui/chart';
 
 /**
- * PieChart component that allows full customization with props
+ * @uxpindocurl https://ui.shadcn.com/docs/components/chart
+ * @uxpindescription Displays a customizable pie chart.
  */
 export default function PieChart(props) {
   return (
     <ChartContainer
       config={props.chartConfig}
-      className='mx-auto aspect-square max-h-[300px]'
+      className={`mx-auto aspect-square ${props.className}`}
     >
       <PieChartM>
         <Pie
@@ -56,4 +48,5 @@ PieChart.propTypes = {
   dataKey: PropTypes.string,
   enableLegend: PropTypes.bool,
   enableTooltip: PropTypes.bool,
+  className: PropTypes.string,
 };
