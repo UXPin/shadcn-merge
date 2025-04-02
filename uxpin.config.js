@@ -55,6 +55,13 @@ module.exports = {
         ],
       },
       {
+        name: 'Charts',
+        include: [
+          'src/components/BarChart/BarChart.jsx',
+          'src/components/PieChart/PieChart.jsx',
+        ],
+      },
+      {
         name: 'HTML',
         include: [
           'src/components/HtmlComponents/HtmlHeading/HtmlHeading.jsx',
