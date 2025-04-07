@@ -285,6 +285,12 @@ module.exports = {
       Sheet: {
         open: { disabled: true, context: 'canvas', value: false },
       },
+      Select: {
+        open: { disabled: true, context: 'canvas', value: false },
+      },
+      CommandDialog: {
+        open: { disabled: true, context: 'canvas', value: false },
+      },
     },
   },
   name: 'ShadCN Design System',
