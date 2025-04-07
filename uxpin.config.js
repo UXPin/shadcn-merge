@@ -272,6 +272,14 @@ module.exports = {
     wrapper: 'src/components/UXPinWrapper/UXPinWrapper.js',
     webpackConfig: 'uxpin.webpack.config.js',
   },
-  settings: { useUXPinProps: true, useConvertingToUXPinClassic: true },
+  settings: {
+    useUXPinProps: true,
+    useConvertingToUXPinClassic: true,
+    propertyConfigurations: {
+      AlertDialog: {
+        open: { disabled: true, context: 'canvas', value: false },
+      },
+    },
+  },
   name: 'ShadCN Design System',
 };
