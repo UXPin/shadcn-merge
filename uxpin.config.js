@@ -284,6 +284,7 @@ module.exports = {
       },
       Sheet: {
         open: { disabled: true, context: 'canvas', value: false },
+        defaultOpen: { disabled: true, context: 'canvas', value: false },
       },
     },
   },
