@@ -23,7 +23,6 @@ Dialog.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   /** The controlled open state of the dialog.
-   * @uxpinbind onOpenChangeeeee 0
    */
   open: PropTypes.bool,
   /** The open state of the dialog when it is initially rendered. */
