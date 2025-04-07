@@ -10,7 +10,7 @@ import Button from '../../Button/Button';
 export default (
   <NavigationMenu uxpId='navigation-menu'>
     <NavigationMenuList uxpId='navigation-menu-list-1'>
-      <NavigationMenuItem uxpId='item-one'>
+      <NavigationMenuItem uxpId='item-one' value='item-1'>
         <NavigationMenuTrigger uxpId='item-one-trigger'>
           Item One
         </NavigationMenuTrigger>
@@ -30,7 +30,7 @@ export default (
     </NavigationMenuList>
 
     <NavigationMenuList uxpId='navigation-menu-list-2'>
-      <NavigationMenuItem uxpId='item-two'>
+      <NavigationMenuItem uxpId='item-two' value='item-2'>
         <NavigationMenuTrigger uxpId='item-two-trigger'>
           Item Two
         </NavigationMenuTrigger>
