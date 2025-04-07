@@ -279,6 +279,12 @@ module.exports = {
       AlertDialog: {
         open: { disabled: true, context: 'canvas', value: false },
       },
+      Dialog: {
+        open: { disabled: true, context: 'canvas', value: false },
+      },
+      Sheet: {
+        open: { disabled: true, context: 'canvas', value: false },
+      },
     },
   },
   name: 'ShadCN Design System',
