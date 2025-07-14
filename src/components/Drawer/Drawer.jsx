@@ -9,12 +9,23 @@ import { Drawer as DrawerM } from '../ui/drawer';
  */
 const Drawer = ({
   children,
-  open,
-  onOpenChange,
   direction,
   className,
   ...props
 }) => {
+  const [open, setOpen] = React.useState(props.open);
+
+  React.useEffect(() => {
+    setOpen(props.open);
+  }, [props.open])
+
+  const onOpenChange = (value) => {
+    props.uxpinOnChange(props.open, value, 'open');
+    if (props.onOpenChange) {
+      props.onOpenChange(value);
+    }
+  }
+
   return (
     <div>
       {/* <div
@@ -27,11 +38,12 @@ const Drawer = ({
         }}
       /> */}
       <DrawerM
-        open={open}
-        onOpenChange={onOpenChange}
+        key={props.defaultOpen}
         direction={direction}
         className={className}
         {...props}
+        open={open}
+        onOpenChange={onOpenChange}
         // container={document.getElementById('jackDiv')}
       >
         {children}

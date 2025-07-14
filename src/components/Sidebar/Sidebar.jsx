@@ -8,7 +8,7 @@ import { Sidebar as SidebarM, SidebarProvider } from '../ui/sidebar';
  */
 const Sidebar = ({ children, className, open, onOpenChange, ...props }) => {
   return (
-    <SidebarProvider open={open} onOpenChange={onOpenChange}>
+    <SidebarProvider key={props.defaultOpen} open={open} onOpenChange={onOpenChange}>
       <SidebarM className={className} {...props}>
         {children}
       </SidebarM>

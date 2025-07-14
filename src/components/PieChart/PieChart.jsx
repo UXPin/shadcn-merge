@@ -15,6 +15,18 @@ import {
  * @uxpindescription Displays a customizable pie chart.
  */
 export default function PieChart(props) {
+  const dataWithColors = props.data?.map((entry, idx) => {
+    let fillColor = entry.fill;
+    if (!fillColor) {
+      if (idx === 0) fillColor = 'hsl(var(--primary))';
+      else if (idx === 1) fillColor = 'hsl(var(--secondary))';
+      else fillColor = `hsl(var(--chart-${((idx - 2) % 5) + 1}))`;
+    }
+    return {
+      ...entry,
+      fill: fillColor,
+    };
+  });
   return (
     <ChartContainer
       config={props.chartConfig}
@@ -22,7 +34,7 @@ export default function PieChart(props) {
     >
       <PieChartM>
         <Pie
-          data={props.data}
+          data={dataWithColors}
           dataKey={props.dataKey}
           innerRadius={props.innerRadius}
         />

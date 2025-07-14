@@ -8,7 +8,7 @@ import { DropdownMenu as DropdownMenuM } from '../ui/dropdown-menu';
  */
 const DropdownMenu = ({ children, className, ...props }) => {
   return (
-    <DropdownMenuM className={className} {...props} modal={false}>
+    <DropdownMenuM key={props.defaultOpen} className={className} {...props} modal={false}>
       {children}
     </DropdownMenuM>
   );

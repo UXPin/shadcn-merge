@@ -8,6 +8,72 @@ module.exports = {
     './src/**/*.{ts,tsx}',
   ],
   prefix: '',
+  safelist: [
+    // === Fonts ===
+    { pattern: /^font-(sans|serif|mono)$/ },
+
+    // === Text colors ===
+    { pattern: /^text-(red|green|blue|yellow|gray|slate|neutral|zinc|stone|orange|amber|lime|emerald|teal|cyan|sky|indigo|violet|purple|fuchsia|pink|rose)-(100|200|300|400|500|600|700|800|900)$/ },
+    { pattern: /^text-(white|black)$/ },
+
+    // === Background colors ===
+    { pattern: /^bg-(red|green|blue|yellow|gray|slate|neutral|zinc|stone|orange|amber|lime|emerald|teal|cyan|sky|indigo|violet|purple|fuchsia|pink|rose)-(100|200|300|400|500|600|700|800|900)$/ },
+    { pattern: /^bg-(white|black|transparent)$/ },
+
+    // === Border colors ===
+    { pattern: /^border-(red|green|blue|yellow|gray|slate|neutral|zinc|stone|orange|amber|lime|emerald|teal|cyan|sky|indigo|violet|purple|fuchsia|pink|rose)-(100|200|300|400|500|600|700|800|900)$/ },
+
+    // === Text size ===
+    { pattern: /^text-(xs|sm|base|lg|xl|2xl|3xl|4xl|5xl|6xl|7xl|8xl|9xl)$/ },
+
+    // === Font weight ===
+    { pattern: /^font-(thin|extralight|light|normal|medium|semibold|bold|extrabold|black)$/ },
+
+    // === Padding / Margin ===
+    { pattern: /^(p|px|py|pt|pb|pl|pr)-(0|1|2|3|4|5|6|8|10|12|16|20|24|32|40|48|56|64)$/ },
+    { pattern: /^(m|mx|my|mt|mb|ml|mr)-(0|1|2|3|4|5|6|8|10|12|16|20|24|32|40|48|56|64)$/ },
+
+    // === Border radius ===
+    { pattern: /^rounded(-(none|sm|md|lg|xl|2xl|3xl|full))?$/ },
+
+    // === Width / Height ===
+    { pattern: /^(w|h)-(0|1|2|4|8|16|24|32|40|48|64|auto|full|screen|min|max|fit)$/ },
+
+    // === Flex / Grid ===
+    { pattern: /^flex(-(row|col|wrap|nowrap|1|auto))?$/ },
+    { pattern: /^items-(start|center|end|stretch|baseline)$/ },
+    { pattern: /^justify-(start|center|end|between|around|evenly)$/ },
+    { pattern: /^gap-(0|1|2|4|6|8|10|12|16|20)$/ },
+
+    // === Display ===
+    { pattern: /^block|inline|inline-block|flex|grid|hidden$/ },
+
+    // === Shadow ===
+    { pattern: /^shadow(-(sm|md|lg|xl|2xl|inner|none))?$/ },
+
+    // === Transition / Animation ===
+    { pattern: /^transition(-(all|colors|opacity|shadow|transform))?$/ },
+    { pattern: /^duration-(75|100|150|200|300|500|700|1000)$/ },
+    { pattern: /^ease-(linear|in|out|in-out)$/ },
+
+    // === Hover / Focus (warianty) ===
+    {
+      pattern: /^(bg|text|border)-(red|green|blue|gray|slate|neutral|zinc|stone|yellow|orange|amber|lime|emerald|teal|cyan|sky|indigo|violet|purple|fuchsia|pink|rose)-(100|200|300|400|500|600|700|800|900)$/,
+      variants: ['hover', 'focus', 'active', 'dark'],
+    },
+
+    // === Overflow / Z-index / Positioning ===
+    { pattern: /^overflow-(auto|hidden|visible|scroll)$/ },
+    { pattern: /^z-(0|10|20|30|40|50|auto)$/ },
+    { pattern: /^relative|absolute|fixed|sticky$/ },
+
+    // === Ring (focus outline) ===
+    { pattern: /^ring(-(0|1|2|4|8))?$/ },
+    { pattern: /^ring-(red|blue|green|gray|purple)-(100|200|400|600)$/ },
+
+    // === Opacity ===
+    { pattern: /^opacity-(0|25|50|75|100)$/ },
+  ],
   theme: {
     container: {
       center: true,
@@ -60,6 +126,11 @@ module.exports = {
           'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
           border: 'hsl(var(--sidebar-border))',
           ring: 'hsl(var(--sidebar-ring))',
+        },
+        fontFamily: {
+          sans: ['var(--font-sans)', 'sans-serif'],
+          serif: ['var(--font-serif)', 'serif'],
+          mono: ['var(--font-mono)', 'monospace'],
         },
       },
       borderRadius: {

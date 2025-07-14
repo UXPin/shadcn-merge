@@ -36,6 +36,8 @@
     "react-resizable-panels": "^2.1.7",
     "react-scripts": "5.0.1",
     "recharts": "^2.15.1",
+    "sonner": "^2.0.6",
+    "tailwindcss": "^3.4.2",
     "tailwind-merge": "^2.2.2",
     "tailwindcss-animate": "^1.0.7",
     "ts-loader": "^9.5.1",
@@ -69,7 +71,6 @@
     ]
   },
   "devDependencies": {
-    "@uxpin/merge-cli": "^3.4.3",
-    "tailwindcss": "^3.4.2"
+    "@uxpin/merge-cli": "^3.4.3"
   }
 }

@@ -8,7 +8,7 @@ import { NavigationMenu as NavigationMenuM } from '../ui/navigation-menu';
  */
 const NavigationMenu = ({ children, className, ...props }) => {
   return (
-    <NavigationMenuM className={className} {...props}>
+    <NavigationMenuM key={props.defaultValue} className={className} {...props}>
       {children}
     </NavigationMenuM>
   );

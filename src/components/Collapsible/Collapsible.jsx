@@ -16,6 +16,7 @@ const Collapsible = ({
 }) => {
   return (
     <CollapsibleM
+      key={props.defaultOpen}
       open={open}
       defaultOpen={defaultOpen}
       disabled={disabled}

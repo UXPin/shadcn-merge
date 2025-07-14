@@ -2,21 +2,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   Dialog as DialogM,
-  DialogClose,
-  DialogContent,
-  DialogTrigger,
-  DialogTitle,
-  DialogHeader,
-  DialogFooter,
-  DialogDescription,
 } from '../ui/dialog';
-import Button from '../Button/Button';
+
 /**
  * @uxpindocurl https://ui.shadcn.com/docs/components/dialog
  * @uxpindescription Root component to manage dialog state and logic.
  */
 const Dialog = (props) => {
-  return <DialogM {...props} />;
+  const [open, setOpen] = React.useState(props.open);
+
+  React.useEffect(() => {
+    setOpen(props.open);
+  }, [props.open])
+
+  const onOpenChange = (value) => {
+    props.uxpinOnChange(props.open, value, 'open');
+    if (props.onOpenChange) {
+      props.onOpenChange(value);
+    }
+  }
+  return <DialogM key={props.defaultOpen} {...props} open={open} onOpenChange={onOpenChange} />;
 };
 
 Dialog.propTypes = {

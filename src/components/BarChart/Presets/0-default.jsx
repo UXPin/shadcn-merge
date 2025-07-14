@@ -15,16 +15,14 @@ export default (
     columns={{
       desktop: {
         label: 'Desktop',
-        color: '#2563eb',
       },
       mobile: {
         label: 'Mobile',
-        color: '#60a5fa',
       },
     }}
     chartConfig={{
-      desktop: { label: 'Desktop', color: '#2563eb' },
-      mobile: { label: 'Mobile', color: '#60a5fa' },
+      desktop: { label: 'Desktop',  },
+      mobile: { label: 'Mobile', },
     }}
     enableGrid={true}
     enableLegend={true}

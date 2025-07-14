@@ -3,7 +3,7 @@ import AspectRatio from '../AspectRatio';
 import Image from '../../Image/Image';
 
 export default (
-  <AspectRatio uxpId='aspect-ratio-1' ratio={2}>
+  <AspectRatio uxpId='aspect-ratio-1' ratio={16 / 9}>
     <Image
       src='https://images.unsplash.com/photo-1604871000636-074fa5117945'
       fit='cover'

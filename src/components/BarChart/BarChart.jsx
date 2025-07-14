@@ -33,14 +33,22 @@ export default function BarChart(props) {
           <ChartTooltip content={<ChartTooltipContent />} />
         )}
         {props.enableLegend && <ChartLegend content={<ChartLegendContent />} />}
-        {Object.keys(props.columns).map((key) => (
-          <Bar
-            key={key}
-            dataKey={key}
-            fill={props.columns[key].color}
-            radius={4}
-          />
-        ))}
+        {Object.keys(props.columns).map((key, idx) => {
+          let fillColor = props.columns[key]?.fill;
+          if (!fillColor) {
+            if (idx === 0) fillColor = 'hsl(var(--primary))';
+            else if (idx === 1) fillColor = 'hsl(var(--secondary))';
+            else fillColor = `hsl(var(--chart-${((idx - 2) % 5) + 1}))`;
+          }
+          return (
+            <Bar
+              key={key}
+              dataKey={key}
+              fill={fillColor}
+              radius={4}
+            />
+          );
+        })}
       </BarChartM>
     </ChartContainer>
   );

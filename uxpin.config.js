@@ -52,6 +52,9 @@ module.exports = {
           'src/components/Sidebar/Sidebar.jsx',
           'src/components/RadioGroup/RadioGroup.jsx',
           'src/components/ResizablePanelGroup/ResizablePanelGroup.jsx',
+          'src/components/Combobox/Combobox.jsx',
+          'src/components/DatePicker/DatePicker.jsx',
+          'src/components/Sonner/Sonner.jsx',
         ],
       },
       {
@@ -59,6 +62,10 @@ module.exports = {
         include: [
           'src/components/BarChart/BarChart.jsx',
           'src/components/PieChart/PieChart.jsx',
+          'src/components/AreaChart/AreaChart.jsx',
+          'src/components/LineChart/LineChart.jsx',
+          'src/components/RadarChart/RadarChart.jsx',
+          'src/components/RadialChart/RadialChart.jsx',
         ],
       },
       {
@@ -76,6 +83,16 @@ module.exports = {
           'src/components/HtmlComponents/HtmlTableRow/HtmlTableRow.jsx',
           'src/components/HtmlComponents/HtmlTableCell/HtmlTableCell.jsx',
           'src/components/HtmlComponents/HtmlTag/HtmlTag.jsx',
+        ],
+      },
+      {
+        name: 'Typography',
+        include: [
+          'src/components/Typography/Header1/Header1.jsx',
+          'src/components/Typography/Header2/Header2.jsx',
+          'src/components/Typography/Header3/Header3.jsx',
+          'src/components/Typography/Header4/Header4.jsx',
+          'src/components/Typography/Paragraph/Paragraph.jsx',
         ],
       },
       {

@@ -10,6 +10,9 @@ function Checkbox(props) {
 }
 
 Checkbox.propTypes = {
+  /**
+   * @uxpinbind onCheckedChange 0
+   */
   checked: PropTypes.bool,
   onCheckedChange: PropTypes.func,
   disabled: PropTypes.bool,

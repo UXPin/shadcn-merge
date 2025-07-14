@@ -8,7 +8,7 @@ import { Select as SelectM } from '../ui/select';
  */
 const Select = ({ children, className, ...props }) => {
   return (
-    <SelectM className={className} {...props}>
+    <SelectM key={props.defaultOpen} className={className} {...props}>
       {children}
     </SelectM>
   );

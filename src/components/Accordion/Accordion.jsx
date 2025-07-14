@@ -8,7 +8,7 @@ import { Accordion as AccordionM } from '../ui/accordion';
  */
 const Accordion = ({ className, children, ...props }) => {
   return (
-    <AccordionM className={className} {...props}>
+    <AccordionM key={props.defaultValue}  className={className} {...props}>
       {children}
     </AccordionM>
   );

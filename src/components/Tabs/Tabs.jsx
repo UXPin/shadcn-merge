@@ -8,7 +8,7 @@ import { Tabs as TabsM } from '../ui/tabs';
  */
 const Tabs = ({ children, className, ...props }) => {
   return (
-    <TabsM className={className} {...props}>
+    <TabsM key={props.defaultValue} className={className} {...props}>
       {children}
     </TabsM>
   );

@@ -7,8 +7,21 @@ import { Sheet as SheetM } from '../ui/sheet';
  * @uxpindescription A container for displaying side panel overlays.
  */
 const Sheet = ({ children, className, ...props }) => {
+  const [open, setOpen] = React.useState(props.open);
+
+  React.useEffect(() => {
+    setOpen(props.open);
+  }, [props.open])
+
+  const onOpenChange = (value) => {
+    props.uxpinOnChange(props.open, value, 'open');
+    if (props.onOpenChange) {
+      props.onOpenChange(value);
+    }
+  }
+
   return (
-    <SheetM className={className} {...props}>
+    <SheetM className={className} key={props.defaultOpen} {...props} open={open} onOpenChange={onOpenChange} >
       {children}
     </SheetM>
   );

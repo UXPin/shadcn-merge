@@ -22,7 +22,7 @@ export default (
       </DrawerHeader>
       <DrawerFooter uxpId='drawer-footer-1'>
         <Button uxpId='drawer-footer-button-1'>Submit</Button>
-        <DrawerClose uxpId='drawer-footer-close-1'>
+        <DrawerClose uxpId='drawer-footer-close-1' asChild>
           <Button variant='outline' uxpId='drawer-footer-button-2'>
             Cancel
           </Button>

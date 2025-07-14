@@ -8,7 +8,7 @@ import { ToggleGroup as ToggleGroupM } from '../ui/toggle-group';
  */
 const ToggleGroup = ({ children, className, ...props }) => {
   return (
-    <ToggleGroupM className={className} {...props}>
+    <ToggleGroupM key={props.defaultValue} className={className} {...props}>
       {children}
     </ToggleGroupM>
   );

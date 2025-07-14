@@ -7,7 +7,20 @@ import { AlertDialog as AlertDialogM } from '../ui/alert-dialog';
  * @uxpindescription A modal dialog that interrupts the user with a mandatory action.
  */
 const AlertDialog = ({ children, ...props }) => {
-  return <AlertDialogM {...props}>{children}</AlertDialogM>;
+  const [open, setOpen] = React.useState(props.open);
+
+  React.useEffect(() => {
+    setOpen(props.open);
+  }, [props.open])
+
+  const onOpenChange = (value) => {
+    props.uxpinOnChange(props.open, value, 'open');
+    if (props.onOpenChange) {
+      props.onOpenChange(value);
+    }
+  }
+
+  return <AlertDialogM key={props.defaultOpen} {...props} open={open} onOpenChange={onOpenChange} >{children}</AlertDialogM>;
 };
 
 AlertDialog.propTypes = {

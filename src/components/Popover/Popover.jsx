@@ -8,7 +8,7 @@ import { Popover as PopoverM } from '../ui/popover';
  */
 const Popover = ({ children, className, ...props }) => {
   return (
-    <PopoverM className={className} {...props}>
+    <PopoverM key={props.defaultOpen} className={className} {...props}>
       {children}
     </PopoverM>
   );

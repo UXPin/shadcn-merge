@@ -8,7 +8,7 @@ import { Toggle as ToggleM } from '../ui/toggle';
  */
 const Toggle = ({ children, className, ...props }) => {
   return (
-    <ToggleM className={className} {...props}>
+    <ToggleM key={props.defaultPressed} className={className} {...props}>
       {children}
     </ToggleM>
   );

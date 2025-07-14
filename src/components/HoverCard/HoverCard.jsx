@@ -15,6 +15,7 @@ const HoverCard = ({
 }) => {
   return (
     <HoverCardM
+      key={props.defaultOpen}
       openDelay={openDelay}
       closeDelay={closeDelay}
       className={className}

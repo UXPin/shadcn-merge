@@ -8,7 +8,7 @@ import { RadioGroup as RadioGroupM } from '../ui/radio-group';
  */
 const RadioGroup = ({ children, className, ...props }) => {
   return (
-    <RadioGroupM className={className} {...props}>
+    <RadioGroupM key={props.defaultValue} className={className} {...props}>
       {children}
     </RadioGroupM>
   );

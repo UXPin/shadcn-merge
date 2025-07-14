@@ -5,11 +5,11 @@ export default (
   <PieChart
     uxpId='pie-chart-1'
     data={[
-      { browser: 'chrome', visitors: 275, fill: '#2563eb' },
-      { browser: 'safari', visitors: 200, fill: '#60a8fb' },
-      { browser: 'firefox', visitors: 187, fill: '#3b86f7' },
-      { browser: 'edge', visitors: 173, fill: '#90c7fe' },
-      { browser: 'other', visitors: 90, fill: '#bedcfe' },
+      { browser: 'chrome', visitors: 275,  },
+      { browser: 'safari', visitors: 200,  },
+      { browser: 'firefox', visitors: 187,  },
+      { browser: 'edge', visitors: 173 },
+      { browser: 'other', visitors: 90 },
     ]}
     chartConfig={{
       visitors: {

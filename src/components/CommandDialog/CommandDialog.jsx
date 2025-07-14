@@ -7,8 +7,20 @@ import { CommandDialog as CommandDialogM } from '../ui/command';
  * @uxpindescription Dialog container for the command component.
  */
 const CommandDialog = ({ children, className, ...props }) => {
+  const [open, setOpen] = React.useState(props.open);
+
+  React.useEffect(() => {
+    setOpen(props.open);
+  }, [props.open])
+
+  const onOpenChange = (value) => {
+    props.uxpinOnChange(props.open, value, 'open');
+    if (props.onOpenChange) {
+      props.onOpenChange(value);
+    }
+  }
   return (
-    <CommandDialogM className={className} {...props}>
+    <CommandDialogM className={className} {...props} open={open} onOpenChange={onOpenChange}>
       {children}
     </CommandDialogM>
   );

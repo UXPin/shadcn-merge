@@ -10,7 +10,7 @@ import { TooltipProvider } from '../ui/tooltip';
 const Tooltip = ({ children, className, ...props }) => {
   return (
     <TooltipProvider>
-      <TooltipM className={className} {...props}>
+      <TooltipM key={props.defaultOpen} className={className} {...props}>
         {children}
       </TooltipM>
     </TooltipProvider>
