@@ -9,6 +9,7 @@ module.exports = {
   ],
   prefix: '',
   safelist: [
+    'ng-canvas',
     // === Fonts ===
     { pattern: /^font-(sans|serif|mono)$/ },
 

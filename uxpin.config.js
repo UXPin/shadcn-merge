@@ -1,3 +1,6 @@
+const themes = require('./themes.js');
+
+
 module.exports = {
   components: {
     categories: [
@@ -290,6 +293,8 @@ module.exports = {
     webpackConfig: 'uxpin.webpack.config.js',
   },
   settings: {
+    componentType: 'shadcn',
+    themes: themes,
     useUXPinProps: true,
     useConvertingToUXPinClassic: true,
     propertyConfigurations: {
