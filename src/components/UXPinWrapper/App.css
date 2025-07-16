@@ -4,6 +4,9 @@
 
 @layer base {
   :root {
+    --font-sans: ui-sans-serif;
+    --font-serif: ui-serif;
+    --font-mono: ui-monospace;
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
@@ -32,6 +35,9 @@
   }
 
   .dark {
+    --font-sans: ui-sans-serif;
+    --font-serif: ui-serif;
+    --font-mono: ui-monospace;
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
     --card: 0 0% 3.9%;

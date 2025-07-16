@@ -128,11 +128,11 @@ module.exports = {
           border: 'hsl(var(--sidebar-border))',
           ring: 'hsl(var(--sidebar-ring))',
         },
-        fontFamily: {
-          sans: ['var(--font-sans)', 'sans-serif'],
-          serif: ['var(--font-serif)', 'serif'],
-          mono: ['var(--font-mono)', 'monospace'],
-        },
+      },
+      fontFamily: {
+        sans: ['var(--font-sans)', 'sans-serif'],
+        serif: ['var(--font-serif)', 'serif'],
+        mono: ['var(--font-mono)', 'monospace'],
       },
       borderRadius: {
         lg: 'var(--radius)',
