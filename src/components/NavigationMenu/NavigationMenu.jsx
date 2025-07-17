@@ -17,6 +17,8 @@ const NavigationMenu = ({ children, className, ...props }) => {
 NavigationMenu.propTypes = {
   /** If true, renders the component as a child element. */
   asChild: PropTypes.bool,
+  /** Additional class names for styling */
+  className: PropTypes.string,
   /** The value of the menu item that should be active when initially rendered. */
   defaultValue: PropTypes.string,
   /** The controlled value of the menu item to activate.

@@ -8,7 +8,7 @@ import NavigationMenuLink from '../../NavigationMenuLink/NavigationMenuLink';
 import Button from '../../Button/Button';
 
 export default (
-  <NavigationMenu uxpId='navigation-menu'>
+  <NavigationMenu uxpId='navigation-menu' className="bg-background text-foreground">
     <NavigationMenuList uxpId='navigation-menu-list-1'>
       <NavigationMenuItem uxpId='item-one' value='item-1'>
         <NavigationMenuTrigger uxpId='item-one-trigger'>
