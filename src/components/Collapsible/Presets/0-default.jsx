@@ -3,7 +3,7 @@ import Collapsible from '../Collapsible';
 import CollapsibleContent from '../../CollapsibleContent/CollapsibleContent';
 import CollapsibleTrigger from '../../CollapsibleTrigger/CollapsibleTrigger';
 export default (
-  <Collapsible uxpId='collapsible-1'>
+  <Collapsible uxpId='collapsible-1' className='text-foreground'>
     <CollapsibleTrigger uxpId='collapsible-trigger-1'>
       I am collapsible -- click me!
     </CollapsibleTrigger>

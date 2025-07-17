@@ -116,10 +116,6 @@ module.exports = {
 
     // === Plugins / Misc ===
     { pattern: /^aspect-(auto|square|video)$/ },
-    { pattern: /^prose(-(sm|lg|xl|2xl))?$/ },
-    { pattern: /^prose-(invert|headings|p|a|strong|code|pre|blockquote)$/ },
-    { pattern: /^data-\[.*?\]$/ },
-    { pattern: /^aria-\[.*?\]$/ }
 
   ],
   theme: {

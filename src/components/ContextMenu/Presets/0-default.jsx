@@ -15,7 +15,7 @@ import ContextMenuRadioItem from '../../ContextMenuRadioItem/ContextMenuRadioIte
 import HtmlText from '../../HtmlComponents/HtmlText/HtmlText';
 
 export default (
-  <ContextMenu uxpId='context-menu'>
+  <ContextMenu uxpId='context-menu' className='text-foreground'>
     <ContextMenuTrigger uxpId='context-menu-trigger'>
       Right-Click me!
     </ContextMenuTrigger>
