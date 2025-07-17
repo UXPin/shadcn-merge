@@ -7,6 +7,7 @@ export default (
   <Accordion
     type='single'
     collapsible
+    className="bg-background text-foreground"
     defaultValue='item-2'
     uxpId='accordion-1'
   >
