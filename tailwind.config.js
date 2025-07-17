@@ -20,7 +20,18 @@ module.exports = {
     // === Background colors ===
     { pattern: /^bg-(red|green|blue|yellow|gray|slate|neutral|zinc|stone|orange|amber|lime|emerald|teal|cyan|sky|indigo|violet|purple|fuchsia|pink|rose)-(100|200|300|400|500|600|700|800|900)$/ },
     { pattern: /^bg-(white|black|transparent)$/ },
-
+    {
+      pattern: /^bg-(red|green|blue|yellow|gray|slate|neutral|zinc|stone|orange|amber|lime|emerald|teal|cyan|sky|indigo|violet|purple|fuchsia|pink|rose|white|black)\/(5|10|20|30|40|50|60|70|80|90|95|100)$/,
+    },
+    {
+      pattern: /^bg-gradient-to-(t|tr|r|br|b|bl|l|tl)$/,
+    },
+    {
+      pattern: /^(from|via|to)-(red|green|blue|yellow|gray|slate|neutral|zinc|stone|orange|amber|lime|emerald|teal|cyan|sky|indigo|violet|purple|fuchsia|pink|rose)-(100|200|300|400|500|600|700|800|900)$/,
+    },
+    {
+      pattern: /^(from|via|to)-(red|green|blue|yellow|gray|slate|neutral|zinc|stone|orange|amber|lime|emerald|teal|cyan|sky|indigo|violet|purple|fuchsia|pink|rose|white|black)\/(5|10|20|30|40|50|60|70|80|90|95|100)$/,
+    },
     // === Border colors ===
     { pattern: /^border-(red|green|blue|yellow|gray|slate|neutral|zinc|stone|orange|amber|lime|emerald|teal|cyan|sky|indigo|violet|purple|fuchsia|pink|rose)-(100|200|300|400|500|600|700|800|900)$/ },
 
