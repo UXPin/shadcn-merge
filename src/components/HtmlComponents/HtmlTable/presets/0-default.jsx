@@ -7,7 +7,7 @@ import HtmlTableRow from '../../HtmlTableRow/HtmlTableRow'
 import HtmlTableCell from '../../HtmlTableCell/HtmlTableCell'
 
 export default (
-  <HtmlTable uxpId="HtmlTable" width="100%">
+  <HtmlTable uxpId="HtmlTable" width="100%" className={'text-foreground'}>
     <HtmlTableHead uxpId="THead-1">
       <HtmlTableRow uxpId="TR-1">
         <HtmlTableHeading uxpId="TH-1">#</HtmlTableHeading>
