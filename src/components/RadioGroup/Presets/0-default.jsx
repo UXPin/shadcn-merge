@@ -5,7 +5,7 @@ import HtmlDiv from '../../HtmlComponents/HtmlDiv/HtmlDiv';
 import Label from '../../Label/Label';
 
 export default (
-  <RadioGroup value='radio-2' uxpId='radio-group'>
+  <RadioGroup value='radio-2' uxpId='radio-group' className="text-foreground">
     <HtmlDiv className='flex items-center space-x-2' uxpId='radio-group-div-1'>
       <RadioGroupItem value='radio-1' id='r1' uxpId='radio-group-item-1' />
       <Label uxpId='radio-group-label-1'>Radio 1</Label>

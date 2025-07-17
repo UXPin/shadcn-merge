@@ -3,7 +3,7 @@ import ToggleGroup from '../ToggleGroup';
 import ToggleGroupItem from '../../ToggleGroupItem/ToggleGroupItem';
 
 export default (
-  <ToggleGroup type='multiple' variant='outline' uxpId='toggle-group'>
+  <ToggleGroup type='multiple' variant='outline' uxpId='toggle-group' className='text-foreground'>
     <ToggleGroupItem
       value='bold'
       aria-label='Toggle bold'

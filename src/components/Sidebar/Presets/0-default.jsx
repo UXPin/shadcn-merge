@@ -23,7 +23,7 @@ import SidebarRail from '../../SidebarRail/SidebarRail';
 import SidebarSeparator from '../../SidebarSeparator/SidebarSeparator';
 import SidebarTrigger from '../../SidebarTrigger/SidebarTrigger';
 export default (
-  <Sidebar uxpId='sidebar'>
+  <Sidebar uxpId='sidebar' className="bg-background text-foreground">
     <SidebarHeader uxpId='sidebar-header'>SIDEBAR HEADER</SidebarHeader>
     <SidebarContent uxpId='sidebar-content'>
       <SidebarGroup uxpId='sidebar-group-basic-menu'>

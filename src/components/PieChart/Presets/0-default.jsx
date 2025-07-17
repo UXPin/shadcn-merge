@@ -3,6 +3,7 @@ import PieChart from '../PieChart';
 
 export default (
   <PieChart
+    className="bg-background text-foreground"
     uxpId='pie-chart-1'
     data={[
       { browser: 'chrome', visitors: 275,  },

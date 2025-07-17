@@ -4,6 +4,7 @@ import LineChart from '../LineChart';
 export default (
   <LineChart
     uxpId='line-chart-1'
+    className="bg-background text-foreground"
     data={[
       { month: 'January', desktop: 120, mobile: 60 },
       { month: 'February', desktop: 200, mobile: 110 },
@@ -31,4 +32,4 @@ export default (
     enableTooltip={true}
     dataKey='month'
   />
-); 
+);

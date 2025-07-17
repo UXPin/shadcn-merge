@@ -9,7 +9,7 @@ export default (
     className='rounded-lg border '
     uxpId='resizable-panel-group-horizontal'
   >
-    <ResizablePanel defaultSize={50} uxpId='resizable-panel-1'>
+    <ResizablePanel defaultSize={50} uxpId='resizable-panel-1' className="bg-background text-foreground">
       One
     </ResizablePanel>
     <ResizableHandle withHandle uxpId='resizable-handle-1' />

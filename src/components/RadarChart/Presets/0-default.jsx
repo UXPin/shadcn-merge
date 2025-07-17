@@ -3,6 +3,7 @@ import RadarChart from '../RadarChart';
 
 export default (
   <RadarChart
+    className="bg-background text-foreground"
     uxpId='radar-chart-1'
     data={[
       { subject: 'Math', desktop: 120, mobile: 110 },
@@ -32,4 +33,4 @@ export default (
     enableTooltip={true}
     dataKey='subject'
   />
-); 
+);

@@ -3,6 +3,7 @@ import RadialChart from '../RadialChart';
 
 export default (
   <RadialChart
+    className="bg-background text-foreground"
     uxpId='radial-chart-1'
     data={[
       { name: 'Desktop', desktop: 120,  },
@@ -27,4 +28,4 @@ export default (
     enableLegend={true}
     enableTooltip={true}
   />
-); 
+);
