@@ -3,7 +3,7 @@ import DataTable from '../DataTable';
 
 export default (
   <DataTable
-    className="rounded-md border text-foreground"
+    className="rounded-md border bg-background text-foreground"
     uxpId='data-table-1'
     columns={[
       { accessorKey: 'status', header: 'Status' },

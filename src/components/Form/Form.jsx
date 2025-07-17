@@ -27,7 +27,7 @@ export default function Form(props) {
   // ...
   const form = useForm();
 
-  return <FormM {...form}>{props.children}</FormM>;
+  return <div className={props.className}><FormM {...form}>{props.children}</FormM></div>;
 }
 Form.propTypes = {
   /** The content inside the dropdown sub-menu */

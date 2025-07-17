@@ -11,7 +11,7 @@ import DrawerClose from '../../DrawerClose/DrawerClose';
 import Button from '../../Button/Button';
 
 export default (
-  <Drawer uxpId='drawer-1' open={false} direction='right'>
+  <Drawer uxpId='drawer-1' open={false} direction='right' className="text-foreground">
     <DrawerTrigger uxpId='drawer-trigger-1'>Open Drawer</DrawerTrigger>
     <DrawerContent uxpId='drawer-content-1'>
       <DrawerHeader uxpId='drawer-header-1'>

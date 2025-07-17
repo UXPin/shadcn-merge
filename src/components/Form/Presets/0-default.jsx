@@ -9,7 +9,7 @@ import Input from '../../Input/Input';
 import Button from '../../Button/Button';
 
 export default (
-  <Form uxpId='form-1'>
+  <Form uxpId='form-1' className="text-foreground bg-background">
     <FormItem uxpId='form-item-username'>
       <FormLabel uxpId='form-label-username'>Username</FormLabel>
       <FormControl uxpId='form-control-username'>
