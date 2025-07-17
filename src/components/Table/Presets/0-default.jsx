@@ -8,7 +8,7 @@ import TableHead from '../../TableHead/TableHead';
 import TableHeader from '../../TableHeader/TableHeader';
 import TableRow from '../../TableRow/TableRow';
 export default (
-  <Table uxpId='table'>
+  <Table uxpId='table' className='text-foreground bg-background'>
     <TableCaption uxpId='table-caption'>
       A list of your recent invoices.
     </TableCaption>

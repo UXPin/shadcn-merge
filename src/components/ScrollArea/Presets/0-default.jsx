@@ -5,7 +5,7 @@ export default (
   <ScrollArea
     height={250}
     type='auto'
-    className='rounded-md border p-4'
+    className='rounded-md border p-4 bg-background text-foreground'
     uxpId='scrollarea-1'
   >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
