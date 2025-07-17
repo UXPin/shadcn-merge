@@ -45,6 +45,13 @@ module.exports = {
     { pattern: /^items-(start|center|end|stretch|baseline)$/ },
     { pattern: /^justify-(start|center|end|between|around|evenly)$/ },
     { pattern: /^gap-(0|1|2|4|6|8|10|12|16|20)$/ },
+    { pattern: /^grid-cols-(1|2|3|4|5|6|7|8|9|10|11|12)$/ },
+    { pattern: /^col-span-(1|2|3|4|5|6|7|8|9|10|11|12)$/ },
+    { pattern: /^grid-rows-(1|2|3|4|5|6|12)$/ },
+    { pattern: /^row-span-(1|2|3|4|5|6)$/ },
+    { pattern: /^flex-(1|auto|initial|none)$/ },
+    { pattern: /^grow(-(0)?)?$/ },
+    { pattern: /^shrink(-(0)?)?$/ },
 
     // === Display ===
     { pattern: /^block|inline|inline-block|flex|grid|hidden$/ },
@@ -56,8 +63,9 @@ module.exports = {
     { pattern: /^transition(-(all|colors|opacity|shadow|transform))?$/ },
     { pattern: /^duration-(75|100|150|200|300|500|700|1000)$/ },
     { pattern: /^ease-(linear|in|out|in-out)$/ },
+    { pattern: /^animate-(spin|ping|pulse|bounce|none|fadeIn|fadeOut|slideIn|slideOut)$/ },
 
-    // === Hover / Focus (warianty) ===
+    // === Hover / Focus  ===
     {
       pattern: /^(bg|text|border)-(red|green|blue|gray|slate|neutral|zinc|stone|yellow|orange|amber|lime|emerald|teal|cyan|sky|indigo|violet|purple|fuchsia|pink|rose)-(100|200|300|400|500|600|700|800|900)$/,
       variants: ['hover', 'focus', 'active', 'dark'],
@@ -65,6 +73,8 @@ module.exports = {
 
     // === Overflow / Z-index / Positioning ===
     { pattern: /^overflow-(auto|hidden|visible|scroll)$/ },
+    { pattern: /^overflow-(x|y)-(auto|hidden|visible|scroll)$/ },
+    { pattern: /^scroll-(auto|smooth)$/ },
     { pattern: /^z-(0|10|20|30|40|50|auto)$/ },
     { pattern: /^relative|absolute|fixed|sticky$/ },
 
@@ -74,6 +84,43 @@ module.exports = {
 
     // === Opacity ===
     { pattern: /^opacity-(0|25|50|75|100)$/ },
+
+    // === Theme-based classes ===
+    { pattern: /^bg-(background|foreground|card|popover|primary|secondary|accent|muted|destructive)$/ },
+    { pattern: /^bg-(sidebar|sidebar-foreground|sidebar-primary|sidebar-accent)$/ },
+    { pattern: /^text-(foreground|card|popover|primary|secondary|accent|muted|destructive)$/ },
+    { pattern: /^border-(input|border|ring|primary|secondary|accent|destructive)$/ },
+
+    // === Text utilities ===
+    { pattern: /^tracking-(tighter|tight|normal|wide|wider|widest)$/ },
+    { pattern: /^leading-(none|tight|snug|normal|relaxed|loose)$/ },
+    { pattern: /^text-(left|center|right|justify)$/ },
+    { pattern: /^uppercase|lowercase|capitalize|normal-case$/ },
+    { pattern: /^align-(top|middle|bottom|baseline|text-top|text-bottom)$/ },
+
+    // === Sizing utilities ===
+    { pattern: /^min-w-(0|full|min|max|fit)$/ },
+    { pattern: /^max-w-(xs|sm|md|lg|xl|2xl|3xl|4xl|5xl|6xl|7xl|full)$/ },
+    { pattern: /^min-h-(0|full|min|max|screen)$/ },
+    { pattern: /^max-h-(0|full|min|max|screen)$/ },
+
+    // === Space / Divide ===
+    { pattern: /^space-(x|y)-(0|1|2|3|4|5|6|8|10|12|16|20|24|32|40|48|56|64)$/ },
+    { pattern: /^divide-(x|y)-(0|2|4|8)$/ },
+    { pattern: /^divide-(red|gray|border)$/ },
+
+    // === Interactivity ===
+    { pattern: /^pointer-events-(none|auto)$/ },
+    { pattern: /^select-(none|text|all|auto)$/ },
+    { pattern: /^cursor-(default|pointer|wait|text|move|not-allowed)$/ },
+
+    // === Plugins / Misc ===
+    { pattern: /^aspect-(auto|square|video)$/ },
+    { pattern: /^prose(-(sm|lg|xl|2xl))?$/ },
+    { pattern: /^prose-(invert|headings|p|a|strong|code|pre|blockquote)$/ },
+    { pattern: /^data-\[.*?\]$/ },
+    { pattern: /^aria-\[.*?\]$/ }
+
   ],
   theme: {
     container: {
