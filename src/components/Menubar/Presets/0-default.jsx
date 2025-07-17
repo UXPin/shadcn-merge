@@ -15,7 +15,7 @@ import MenubarRadioGroup from '../../MenubarRadioGroup/MenubarRadioGroup';
 import HtmlText from '../../HtmlComponents/HtmlText/HtmlText';
 
 export default (
-  <Menubar uxpId='menubar'>
+  <Menubar uxpId='menubar' className='text-foreground'>
     <MenubarMenu uxpId='file-menu'>
       <MenubarTrigger uxpId='file-trigger'>File</MenubarTrigger>
       <MenubarContent uxpId='file-content'>

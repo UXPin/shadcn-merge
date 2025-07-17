@@ -72,23 +72,6 @@ module.exports = {
         ],
       },
       {
-        name: 'HTML',
-        include: [
-          'src/components/HtmlComponents/HtmlHeading/HtmlHeading.jsx',
-          'src/components/HtmlComponents/HtmlText/HtmlText.jsx',
-          'src/components/HtmlComponents/HtmlDiv/HtmlDiv.jsx',
-          'src/components/HtmlComponents/HtmlList/HtmlList.jsx',
-          'src/components/HtmlComponents/HtmlListItem/HtmlListItem.jsx',
-          'src/components/HtmlComponents/HtmlTable/HtmlTable.jsx',
-          'src/components/HtmlComponents/HtmlTableHead/HtmlTableHead.jsx',
-          'src/components/HtmlComponents/HtmlTableBody/HtmlTableBody.jsx',
-          'src/components/HtmlComponents/HtmlTableHeading/HtmlTableHeading.jsx',
-          'src/components/HtmlComponents/HtmlTableRow/HtmlTableRow.jsx',
-          'src/components/HtmlComponents/HtmlTableCell/HtmlTableCell.jsx',
-          'src/components/HtmlComponents/HtmlTag/HtmlTag.jsx',
-        ],
-      },
-      {
         name: 'Typography',
         include: [
           'src/components/Typography/Header1/Header1.jsx',

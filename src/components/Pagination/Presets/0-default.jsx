@@ -7,7 +7,7 @@ import PaginationNext from '../../PaginationNext/PaginationNext';
 import PaginationPrevious from '../../PaginationPrevious/PaginationPrevious';
 import PaginationEllipsis from '../../PaginationEllipsis/PaginationEllipsis';
 export default (
-  <Pagination uxpId='pagination-1'>
+  <Pagination uxpId='pagination-1' className='text-foreground bg-background'>
     <PaginationContent uxpId='pagination-content-1'>
       <PaginationItem uxpId='pagination-item-1'>
         <PaginationPrevious href='#' uxpId='pagination-previous-1' />
