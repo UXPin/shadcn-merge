@@ -3,7 +3,7 @@ import { Button as ButtonM, ButtonProps } from '../ui/button';
 
 
 interface ExtendedButtonProps extends ButtonProps {
-  onClick?: React.MouseEventHandler<HTMLButtonElement>,
+  onClick?: () => void,
 }
 
 /**
