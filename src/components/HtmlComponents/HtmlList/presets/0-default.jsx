@@ -3,7 +3,7 @@ import HtmlList from '../HtmlList'
 import HtmlListItem from '../../HtmlListItem/HtmlListItem'
 
 export default (
-  <HtmlList uxpId="html-list-1" listType="ul" className={'text-foreground'}>
+  <HtmlList uxpId="html-list-1" listType="ul" className='text-foreground'>
     <HtmlListItem uxpId="html-list-item-1" listItemType="li">
       Html List Item 1
     </HtmlListItem>

@@ -2,7 +2,7 @@ import React from 'react'
 import HtmlTag from '../HtmlTag'
 
 export default (
-  <HtmlTag uxpId="html-tag-1" tag="div" className={'text-foreground'}>
+  <HtmlTag uxpId="html-tag-1" tag="div" className='text-foreground'>
     I'm a div
   </HtmlTag>
 )
