@@ -28,8 +28,8 @@ export default function RadarChart(props) {
           <ChartTooltip content={<ChartTooltipContent />} />
         )}
         {props.enableLegend && <ChartLegend content={<ChartLegendContent />} />}
-        {Object.keys(props.radars).map((key, idx) => {
-          let fillColor = props.radars[key]?.fill;
+        {Object.keys(props.chartConfig).map((key, idx) => {
+          let fillColor = props.chartConfig[key]?.fill;
           if (!fillColor) {
             if (idx === 0) fillColor = 'hsl(var(--primary))';
             else if (idx === 1) fillColor = 'hsl(var(--secondary))';
@@ -38,12 +38,12 @@ export default function RadarChart(props) {
           return (
             <Radar
               key={key}
-              name={props.radars[key].label}
+              name={props.chartConfig[key].label}
               dataKey={key}
               stroke={fillColor}
               fill={fillColor}
-              fillOpacity={props.radars[key].fillOpacity || 0.3}
-              strokeWidth={props.radars[key].strokeWidth || 2}
+              fillOpacity={props.chartConfig[key].fillOpacity || 0.3}
+              strokeWidth={props.chartConfig[key].strokeWidth || 2}
             />
           );
         })}
@@ -54,18 +54,10 @@ export default function RadarChart(props) {
 
 RadarChart.propTypes = {
   data: PropTypes.arrayOf(PropTypes.object),
-  radars: PropTypes.objectOf(
-    PropTypes.shape({
-      label: PropTypes.string,
-      color: PropTypes.string,
-      fillOpacity: PropTypes.number,
-      strokeWidth: PropTypes.number,
-    })
-  ),
   chartConfig: PropTypes.object,
   dataKey: PropTypes.string,
   outerRadius: PropTypes.number,
   enableLegend: PropTypes.bool,
   enableTooltip: PropTypes.bool,
   className: PropTypes.string,
-}; 
+};

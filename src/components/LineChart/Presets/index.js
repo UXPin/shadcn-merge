@@ -1,1 +1,0 @@
-export { default as Default } from './0-default.jsx'; 

@@ -38,8 +38,8 @@ export default function AreaChart(props) {
           <ChartTooltip content={<ChartTooltipContent />} />
         )}
         {props.enableLegend && <ChartLegend content={<ChartLegendContent />} />}
-        {Object.keys(props.areas).map((key, idx) => {
-          let fillColor = props.areas[key]?.fill;
+        {Object.keys(props.chartConfig).map((key, idx) => {
+          let fillColor = props.chartConfig[key]?.fill;
           if (!fillColor) {
             if (idx === 0) fillColor = 'hsl(var(--primary))';
             else if (idx === 1) fillColor = 'hsl(var(--secondary))';
@@ -48,14 +48,14 @@ export default function AreaChart(props) {
           return (
             <Area
               key={key}
-              type={props.areas[key].type || 'monotone'}
+              type={props.chartConfig[key].type || 'monotone'}
               dataKey={key}
               stroke={fillColor}
               fill={fillColor}
-              fillOpacity={props.areas[key].fillOpacity || 0.2}
-              strokeWidth={props.areas[key].strokeWidth || 2}
-              dot={props.areas[key].dot || false}
-              activeDot={props.areas[key].activeDot || { r: 4 }}
+              fillOpacity={props.chartConfig[key].fillOpacity || 0.2}
+              strokeWidth={props.chartConfig[key].strokeWidth || 2}
+              dot={props.chartConfig[key].dot || false}
+              activeDot={props.chartConfig[key].activeDot || { r: 4 }}
             />
           );
         })}
@@ -66,17 +66,6 @@ export default function AreaChart(props) {
 
 AreaChart.propTypes = {
   data: PropTypes.arrayOf(PropTypes.object),
-  areas: PropTypes.objectOf(
-    PropTypes.shape({
-      label: PropTypes.string,
-      color: PropTypes.string,
-      type: PropTypes.string,
-      fillOpacity: PropTypes.number,
-      strokeWidth: PropTypes.number,
-      dot: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
-      activeDot: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
-    })
-  ),
   chartConfig: PropTypes.object,
   dataKey: PropTypes.string,
   enableGrid: PropTypes.bool,
@@ -85,4 +74,4 @@ AreaChart.propTypes = {
   className: PropTypes.string,
   xTickFormatter: PropTypes.func,
   yTickFormatter: PropTypes.func,
-}; 
+};

@@ -13,23 +13,19 @@ export default (
       { month: 'May', desktop: 150, mobile: 100 },
       { month: 'June', desktop: 180, mobile: 120 },
     ]}
-    areas={{
-      desktop: {
-        label: 'Desktop',
-        color: '#2563eb',
-        type: 'monotone',
-        fillOpacity: 0.25,
-      },
-      mobile: {
-        label: 'Mobile',
-        color: '#60a5fa',
-        type: 'monotone',
-        fillOpacity: 0.25,
-      },
-    }}
     chartConfig={{
-      desktop: { label: 'Desktop', color: '#2563eb' },
-      mobile: { label: 'Mobile', color: '#60a5fa' },
+        desktop: {
+            label: 'Desktop',
+            color: '#2563eb',
+            type: 'monotone',
+            fillOpacity: 0.25,
+        },
+        mobile: {
+            label: 'Mobile',
+            color: '#60a5fa',
+            type: 'monotone',
+            fillOpacity: 0.25,
+        },
     }}
     enableGrid={true}
     enableLegend={true}

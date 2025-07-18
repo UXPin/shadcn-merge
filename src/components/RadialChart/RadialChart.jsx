@@ -33,8 +33,8 @@ export default function RadialChart(props) {
           <ChartTooltip content={<ChartTooltipContent />} />
         )}
         {props.enableLegend && <ChartLegend content={<ChartLegendContent />} />}
-        {Object.keys(props.bars).map((key, idx) => {
-          let fillColor = props.bars[key]?.fill;
+        {Object.keys(props.chartConfig).map((key, idx) => {
+          let fillColor = props.chartConfig[key]?.fill;
           if (!fillColor) {
             if (idx === 0) fillColor = 'hsl(var(--primary))';
             else if (idx === 1) fillColor = 'hsl(var(--secondary))';
@@ -45,10 +45,10 @@ export default function RadialChart(props) {
               key={key}
               dataKey={key}
               fill={fillColor}
-              background={props.bars[key].background || false}
-              cornerRadius={props.bars[key].cornerRadius || 8}
-              minAngle={props.bars[key].minAngle || 15}
-              label={props.bars[key].label || false}
+              background={props.chartConfig[key].background || false}
+              cornerRadius={props.chartConfig[key].cornerRadius || 8}
+              minAngle={props.chartConfig[key].minAngle || 15}
+              label={props.chartConfig[key].label || false}
             />
           );
         })}
@@ -59,15 +59,6 @@ export default function RadialChart(props) {
 
 RadialChart.propTypes = {
   data: PropTypes.arrayOf(PropTypes.object),
-  bars: PropTypes.objectOf(
-    PropTypes.shape({
-      color: PropTypes.string,
-      background: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
-      cornerRadius: PropTypes.number,
-      minAngle: PropTypes.number,
-      label: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
-    })
-  ),
   chartConfig: PropTypes.object,
   innerRadius: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   outerRadius: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -76,4 +67,4 @@ RadialChart.propTypes = {
   enableLegend: PropTypes.bool,
   enableTooltip: PropTypes.bool,
   className: PropTypes.string,
-}; 
+};

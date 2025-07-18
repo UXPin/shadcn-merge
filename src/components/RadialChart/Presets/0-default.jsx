@@ -9,17 +9,9 @@ export default (
       { name: 'Desktop', desktop: 120,  },
       { name: 'Mobile', mobile: 98,},
     ]}
-    bars={{
-      desktop: {
-        cornerRadius: 8,
-      },
-      mobile: {
-        cornerRadius: 8,
-      },
-    }}
     chartConfig={{
-      desktop: { label: 'Desktop',  },
-      mobile: { label: 'Mobile',  },
+      desktop: { label: 'Desktop',  cornerRadius: 8,  },
+      mobile: { label: 'Mobile',  cornerRadius: 8,  },
     }}
     innerRadius='60%'
     outerRadius='90%'

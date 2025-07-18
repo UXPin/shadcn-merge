@@ -13,16 +13,6 @@ export default (
       { month: 'May', desktop: 150, mobile: 100 },
       { month: 'June', desktop: 180, mobile: 120 },
     ]}
-    lines={{
-      desktop: {
-        label: 'Desktop',
-        type: 'monotone',
-      },
-      mobile: {
-        label: 'Mobile',
-        type: 'monotone',
-      },
-    }}
     chartConfig={{
       desktop: { label: 'Desktop'  },
       mobile: { label: 'Mobile'  },

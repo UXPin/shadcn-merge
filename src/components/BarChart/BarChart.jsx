@@ -33,8 +33,8 @@ export default function BarChart(props) {
           <ChartTooltip content={<ChartTooltipContent />} />
         )}
         {props.enableLegend && <ChartLegend content={<ChartLegendContent />} />}
-        {Object.keys(props.columns).map((key, idx) => {
-          let fillColor = props.columns[key]?.fill;
+        {Object.keys(props.chartConfig).map((key, idx) => {
+          let fillColor = props.chartConfig[key]?.fill;
           if (!fillColor) {
             if (idx === 0) fillColor = 'hsl(var(--primary))';
             else if (idx === 1) fillColor = 'hsl(var(--secondary))';

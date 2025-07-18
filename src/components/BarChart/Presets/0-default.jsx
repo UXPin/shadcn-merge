@@ -12,14 +12,6 @@ export default (
       { month: 'May', desktop: 209, mobile: 130 },
       { month: 'June', desktop: 214, mobile: 140 },
     ]}
-    columns={{
-      desktop: {
-        label: 'Desktop',
-      },
-      mobile: {
-        label: 'Mobile',
-      },
-    }}
     chartConfig={{
       desktop: { label: 'Desktop',  },
       mobile: { label: 'Mobile', },
