@@ -256,7 +256,6 @@ module.exports = {
           'src/components/TabsList/TabsList.jsx',
           'src/components/TooltipContent/TooltipContent.jsx',
           'src/components/TooltipTrigger/TooltipTrigger.jsx',
-          'src/components/TooltipProvider/TooltipProvider.jsx',
           'src/components/ToggleGroupItem/ToggleGroupItem.jsx',
           'src/components/ToastAction/ToastAction.jsx',
           'src/components/ToastClose/ToastClose.jsx',
