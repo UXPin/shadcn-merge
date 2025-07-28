@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { ResizablePanelGroup as ResizablePanelGroupM } from '../ui/resizable';
 
 /**
- * @uxpindocurl https://ui.shadcn.com/docs/components/resizable-panel
+ * @uxpindocurl https://ui.shadcn.com/docs/components/resizable
  * @uxpindescription Container for a group of resizable panels.
  */
 const ResizablePanelGroup = ({ className, ...props }) => {
