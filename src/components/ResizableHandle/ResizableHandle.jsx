@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { ResizableHandle as ResizableHandleM } from '../ui/resizable';
 
 /**
- * @uxpindocurl https://ui.shadcn.com/docs/components/resizable-panel
+ * @uxpindocurl https://ui.shadcn.com/docs/components/resizable
  * @uxpindescription Handle used to resize adjacent panels.
  */
 const ResizableHandle = ({ children, className, ...props }) => {
