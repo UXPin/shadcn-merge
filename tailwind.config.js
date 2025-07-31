@@ -42,15 +42,8 @@ module.exports = {
     { pattern: /^font-(thin|extralight|light|normal|medium|semibold|bold|extrabold|black)$/ },
 
     // === Padding / Margin ===
-    // Padding: p, px, py, pt, pb, pl, pr
-    {
-      pattern: /^(?:(?:sm|md|lg|xl|2xl|hover|focus|active|visited|disabled):)*!? (p|px|py|pt|pb|pl|pr)-(?:[0-9]{1,2}|100)$/
-    },
-
-    // Margin: m, mx, my, mt, mb, ml, mr — plus "auto"
-    {
-      pattern: /^(?:(?:sm|md|lg|xl|2xl|hover|focus|active|visited|disabled):)*!? (m|mx|my|mt|mb|ml|mr)-(?:[0-9]{1,2}|100|auto)$/
-    },
+    { pattern: /^(p|px|py|pt|pb|pl|pr)-([0-9]{1,2}|100)$/ },
+    { pattern: /^(m|mx|my|mt|mb|ml|mr)-([0-9]{1,2}|100)$/ },
 
     // === Border radius ===
     { pattern: /^rounded(-(none|sm|md|lg|xl|2xl|3xl|full))?$/ },
