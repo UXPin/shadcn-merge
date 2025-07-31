@@ -49,20 +49,41 @@ module.exports = {
     { pattern: /^rounded(-(none|sm|md|lg|xl|2xl|3xl|full))?$/ },
 
     // === Width / Height ===
-    { pattern: /^(w|h)-(0|1|2|4|8|16|24|32|40|48|64|auto|full|screen|min|max|fit)$/ },
+    { pattern: /^(w|h)-(?:[0-9]{1,2}|100|auto|full|screen|min|max|fit|[1-9]\/[1-9]|[1-9]\/10|10\/10|11\/12|5\/6|2\/5|3\/5|4\/5)$/ }
 
     // === Flex / Grid ===
-    { pattern: /^flex(-(row|col|wrap|nowrap|1|auto))?$/ },
-    { pattern: /^items-(start|center|end|stretch|baseline)$/ },
-    { pattern: /^justify-(start|center|end|between|around|evenly)$/ },
-    { pattern: /^gap-(0|1|2|4|6|8|10|12|16|20)$/ },
-    { pattern: /^grid-cols-(1|2|3|4|5|6|7|8|9|10|11|12)$/ },
-    { pattern: /^col-span-(1|2|3|4|5|6|7|8|9|10|11|12)$/ },
-    { pattern: /^grid-rows-(1|2|3|4|5|6|12)$/ },
-    { pattern: /^row-span-(1|2|3|4|5|6)$/ },
+    // Flex (kierunki i wrapowanie)
+    { pattern: /^flex(-(?:(row|row-reverse|col|col-reverse|wrap|wrap-reverse|nowrap)))?$/ },
+
+// Flex basis/grow/shrink
     { pattern: /^flex-(1|auto|initial|none)$/ },
-    { pattern: /^grow(-(0)?)?$/ },
-    { pattern: /^shrink(-(0)?)?$/ },
+
+// Align items
+    { pattern: /^items-(start|end|center|baseline|stretch)$/ },
+
+// Justify content
+    { pattern: /^justify-(start|end|center|between|around|evenly)$/ },
+
+// Gap (standardowy zakres Tailwind + pełen numer od 0 do 100)
+    { pattern: /^gap-([0-9]{1,2}|100)$/ },
+
+// Grid columns (od 1 do 12)
+    { pattern: /^grid-cols-([1-9]|1[0-2])$/ },
+
+// Grid column span
+    { pattern: /^col-span-([1-9]|1[0-2])$/ },
+
+// Grid rows (od 1 do 12)
+    { pattern: /^grid-rows-([1-9]|1[0-2])$/ },
+
+// Grid row span
+    { pattern: /^row-span-([1-9]|1[0-2])$/ },
+
+// Grow: grow, grow-0
+    { pattern: /^grow(-0)?$/ },
+
+// Shrink: shrink, shrink-0
+    { pattern: /^shrink(-0)?$/ },
 
     // === Display ===
     { pattern: /^block|inline|inline-block|flex|grid|hidden$/ },
