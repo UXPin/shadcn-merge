@@ -49,7 +49,7 @@ module.exports = {
     { pattern: /^rounded(-(none|sm|md|lg|xl|2xl|3xl|full))?$/ },
 
     // === Width / Height ===
-    { pattern: /^(w|h)-(?:[0-9]{1,2}|100|auto|full|screen|min|max|fit|[1-9]\/[1-9]|[1-9]\/10|10\/10|11\/12|5\/6|2\/5|3\/5|4\/5)$/ }
+    { pattern: /^(w|h)-(?:[0-9]{1,2}|100|auto|full|screen|min|max|fit|[1-9]\/[1-9]|[1-9]\/10|10\/10|11\/12|5\/6|2\/5|3\/5|4\/5)$/ },
 
     // === Flex / Grid ===
     // Flex (kierunki i wrapowanie)
