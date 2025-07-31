@@ -42,8 +42,15 @@ module.exports = {
     { pattern: /^font-(thin|extralight|light|normal|medium|semibold|bold|extrabold|black)$/ },
 
     // === Padding / Margin ===
-    { pattern: /^(p|px|py|pt|pb|pl|pr)-(0|1|2|3|4|5|6|8|10|12|16|20|24|32|40|48|56|64)$/ },
-    { pattern: /^(m|mx|my|mt|mb|ml|mr)-(0|1|2|3|4|5|6|8|10|12|16|20|24|32|40|48|56|64)$/ },
+    // Padding: p, px, py, pt, pb, pl, pr
+    {
+      pattern: /^(?:(?:sm|md|lg|xl|2xl|hover|focus|active|visited|disabled):)*!? (p|px|py|pt|pb|pl|pr)-(?:[0-9]{1,2}|100)$/
+    },
+
+    // Margin: m, mx, my, mt, mb, ml, mr — plus "auto"
+    {
+      pattern: /^(?:(?:sm|md|lg|xl|2xl|hover|focus|active|visited|disabled):)*!? (m|mx|my|mt|mb|ml|mr)-(?:[0-9]{1,2}|100|auto)$/
+    },
 
     // === Border radius ===
     { pattern: /^rounded(-(none|sm|md|lg|xl|2xl|3xl|full))?$/ },
