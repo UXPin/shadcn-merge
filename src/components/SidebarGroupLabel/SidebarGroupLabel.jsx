@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { SidebarGroupLabel as SidebarGroupLabelM } from '../ui/sidebar';
+import SidebarGroupContent from "../SidebarGroupContent/SidebarGroupContent";
 
 /**
  * @uxpindocurl https://ui.shadcn.com/docs/components/sidebar
@@ -20,5 +21,7 @@ SidebarGroupLabel.propTypes = {
    */
   asChild: PropTypes.bool,
 };
+
+SidebarGroupLabel.displayName = "SidebarGroupLabel";
 
 export default SidebarGroupLabel;

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { SidebarMenuSub as SidebarMenuSubM } from '../ui/sidebar';
+import SidebarInput from "../SidebarInput/SidebarInput";
 
 /**
  * @uxpindocurl https://ui.shadcn.com/docs/components/sidebar
@@ -21,5 +22,7 @@ SidebarMenuSub.propTypes = {
   /** Additional CSS class for styling */
   className: PropTypes.string,
 };
+
+SidebarMenuSub.displayName = "SidebarMenuSub";
 
 export default SidebarMenuSub;

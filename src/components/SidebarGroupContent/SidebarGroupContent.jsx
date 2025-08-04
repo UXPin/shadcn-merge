@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { SidebarGroupContent as SidebarGroupContentM } from '../ui/sidebar';
+import SidebarGroupAction from "../SidebarGroupAction/SidebarGroupAction";
 
 /**
  * @uxpindocurl https://ui.shadcn.com/docs/components/sidebar
@@ -21,5 +22,7 @@ SidebarGroupContent.propTypes = {
   /** Additional CSS class for styling */
   className: PropTypes.string,
 };
+
+SidebarGroupContent.displayName = "SidebarGroupContent";
 
 export default SidebarGroupContent;

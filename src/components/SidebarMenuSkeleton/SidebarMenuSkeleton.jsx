@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { SidebarMenuSkeleton as SidebarMenuSkeletonM } from '../ui/sidebar';
+import SidebarMenuSubButton from "../SidebarMenuSubButton/SidebarMenuSubButton";
 
 /**
  * @uxpindocurl https://ui.shadcn.com/docs/components/sidebar
@@ -16,5 +17,7 @@ SidebarMenuSkeleton.propTypes = {
   /** Whether to show skeleton icon */
   showIcon: PropTypes.bool,
 };
+
+SidebarMenuSkeleton.displayName = "SidebarMenuSkeleton";
 
 export default SidebarMenuSkeleton;

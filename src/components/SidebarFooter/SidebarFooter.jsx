@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { SidebarFooter as SidebarFooterM } from '../ui/sidebar';
+import SidebarContent from "../SidebarContent/SidebarContent";
 
 /**
  * @uxpindocurl https://ui.shadcn.com/docs/components/sidebar
@@ -20,5 +21,7 @@ SidebarFooter.propTypes = {
   /** Footer children */
   children: PropTypes.node,
 };
+
+SidebarFooter.displayName = "SidebarFooter";
 
 export default SidebarFooter;

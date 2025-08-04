@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { SidebarMenuButton as SidebarMenuButtonM } from '../ui/sidebar';
+import SidebarMenuSkeleton from "../SidebarMenuSkeleton/SidebarMenuSkeleton";
 
 /**
  * @uxpindocurl https://ui.shadcn.com/docs/components/sidebar
@@ -34,5 +35,7 @@ SidebarMenuButton.propTypes = {
   /** Click handler */
   onClick: PropTypes.func,
 };
+
+SidebarMenuButton.displayName = "SidebarMenuButton";
 
 export default SidebarMenuButton;

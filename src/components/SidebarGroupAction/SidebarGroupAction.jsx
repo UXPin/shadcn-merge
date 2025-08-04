@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { SidebarGroupAction as SidebarGroupActionM } from '../ui/sidebar';
+import SidebarGroup from "../SidebarGroup/SidebarGroup";
 
 /**
  * @uxpindocurl https://ui.shadcn.com/docs/components/sidebar
@@ -22,5 +23,7 @@ SidebarGroupAction.propTypes = {
    */
   asChild: PropTypes.bool,
 };
+
+SidebarGroupAction.displayName = "SidebarGroupAction";
 
 export default SidebarGroupAction;

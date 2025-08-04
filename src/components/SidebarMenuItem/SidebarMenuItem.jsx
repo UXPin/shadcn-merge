@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { SidebarMenuItem as SidebarMenuItemM } from '../ui/sidebar';
+import SidebarMenuSkeleton from "../SidebarMenuSkeleton/SidebarMenuSkeleton";
 
 /**
  * @uxpindocurl https://ui.shadcn.com/docs/components/sidebar
@@ -20,5 +21,7 @@ SidebarMenuItem.propTypes = {
   /** Additional CSS class for styling */
   className: PropTypes.string,
 };
+
+SidebarMenuItem.displayName = "SidebarMenuItem";
 
 export default SidebarMenuItem;

@@ -17,4 +17,6 @@ SidebarTrigger.propTypes = {
   onClick: PropTypes.func,
 };
 
+SidebarTrigger.displayName = "SidebarTrigger";
+
 export default SidebarTrigger;

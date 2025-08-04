@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { SidebarHeader as SidebarHeaderM } from '../ui/sidebar';
+import SidebarGroupLabel from "../SidebarGroupLabel/SidebarGroupLabel";
 
 /**
  * @uxpindocurl https://ui.shadcn.com/docs/components/sidebar
@@ -21,5 +22,7 @@ SidebarHeader.propTypes = {
   /** Additional CSS class for styling */
   className: PropTypes.string,
 };
+
+SidebarHeader.displayName = "SidebarHeader";
 
 export default SidebarHeader;

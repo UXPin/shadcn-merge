@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { SidebarGroup as SidebarGroupM } from '../ui/sidebar';
+import SidebarFooter from "../SidebarFooter/SidebarFooter";
 
 /**
  * @uxpindocurl https://ui.shadcn.com/docs/components/sidebar
@@ -21,5 +22,7 @@ SidebarGroup.propTypes = {
   /** Additional CSS class for styling */
   className: PropTypes.string,
 };
+
+SidebarGroup.displayName = "SidebarGroup";
 
 export default SidebarGroup;

@@ -15,4 +15,7 @@ SidebarSeparator.propTypes = {
   className: PropTypes.string,
 };
 
+SidebarSeparator.displayName = "SidebarSeparator";
+
+
 export default SidebarSeparator;

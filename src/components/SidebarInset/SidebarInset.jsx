@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { SidebarInset as SidebarInsetM } from '../ui/sidebar';
+import SidebarInput from "../SidebarInput/SidebarInput";
 
 /**
  * @uxpindocurl https://ui.shadcn.com/docs/components/sidebar
@@ -21,5 +22,7 @@ SidebarInset.propTypes = {
   /** Additional CSS class for styling */
   className: PropTypes.string,
 };
+
+SidebarInset.displayName = "SidebarInset";
 
 export default SidebarInset;

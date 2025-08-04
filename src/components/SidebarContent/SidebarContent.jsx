@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { SidebarContent as SidebarContentM } from '../ui/sidebar';
+import SidebarMenuSubItem from "../SidebarMenuSubItem/SidebarMenuSubItem";
 
 /**
  * @uxpindocurl https://ui.shadcn.com/docs/components/sidebar
@@ -20,5 +21,8 @@ SidebarContent.propTypes = {
   /** Content children */
   children: PropTypes.node,
 };
+
+SidebarContent.displayName = "SidebarContent";
+
 
 export default SidebarContent;

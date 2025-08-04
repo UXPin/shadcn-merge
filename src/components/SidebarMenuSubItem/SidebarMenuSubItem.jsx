@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { SidebarMenuSubItem as SidebarMenuSubItemM } from '../ui/sidebar';
+import SidebarRail from "../SidebarRail/SidebarRail";
 
 /**
  * @uxpindocurl https://ui.shadcn.com/docs/components/sidebar
@@ -19,5 +20,8 @@ SidebarMenuSubItem.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
 };
+
+SidebarMenuSubItem.displayName = "SidebarMenuSubItem";
+
 
 export default SidebarMenuSubItem;

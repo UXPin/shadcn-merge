@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { SidebarMenuBadge as SidebarMenuBadgeM } from '../ui/sidebar';
+import SidebarMenuSkeleton from "../SidebarMenuSkeleton/SidebarMenuSkeleton";
 
 /**
  * @uxpindocurl https://ui.shadcn.com/docs/components/sidebar
@@ -16,5 +17,7 @@ SidebarMenuBadge.propTypes = {
   /** Additional CSS class for styling */
   className: PropTypes.string,
 };
+
+SidebarMenuBadge.displayName = "SidebarMenuBadge";
 
 export default SidebarMenuBadge;
