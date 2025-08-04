@@ -10,87 +10,58 @@ module.exports = {
   prefix: '',
   safelist: [
     'ng-canvas',
-    [{ pattern: /./ }],
-    // === Fonts ===
-    { pattern: /^font-(sans|serif|mono)$/ },
+    { pattern: /./ },
+    { pattern: /^font-(sans|serif|mono)$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
 
     // === Text colors ===
-    { pattern: /^text-(red|green|blue|yellow|gray|slate|neutral|zinc|stone|orange|amber|lime|emerald|teal|cyan|sky|indigo|violet|purple|fuchsia|pink|rose)-(100|200|300|400|500|600|700|800|900)$/ },
-    { pattern: /^text-(white|black)$/ },
+    { pattern: /^text-(red|green|blue|yellow|gray|slate|neutral|zinc|stone|orange|amber|lime|emerald|teal|cyan|sky|indigo|violet|purple|fuchsia|pink|rose)-(100|200|300|400|500|600|700|800|900)$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
+    { pattern: /^text-(white|black)$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
 
     // === Background colors ===
     { pattern: /^bg-(red|green|blue|yellow|gray|slate|neutral|zinc|stone|orange|amber|lime|emerald|teal|cyan|sky|indigo|violet|purple|fuchsia|pink|rose)-(100|200|300|400|500|600|700|800|900)$/ },
     { pattern: /^bg-(white|black|transparent)$/ },
-    {
-      pattern: /^bg-(red|green|blue|yellow|gray|slate|neutral|zinc|stone|orange|amber|lime|emerald|teal|cyan|sky|indigo|violet|purple|fuchsia|pink|rose|white|black)\/(5|10|20|30|40|50|60|70|80|90|95|100)$/,
-    },
-    {
-      pattern: /^bg-gradient-to-(t|tr|r|br|b|bl|l|tl)$/,
-    },
-    {
-      pattern: /^(from|via|to)-(red|green|blue|yellow|gray|slate|neutral|zinc|stone|orange|amber|lime|emerald|teal|cyan|sky|indigo|violet|purple|fuchsia|pink|rose)-(100|200|300|400|500|600|700|800|900)$/,
-    },
-    {
-      pattern: /^(from|via|to)-(red|green|blue|yellow|gray|slate|neutral|zinc|stone|orange|amber|lime|emerald|teal|cyan|sky|indigo|violet|purple|fuchsia|pink|rose|white|black)\/(5|10|20|30|40|50|60|70|80|90|95|100)$/,
-    },
+    { pattern: /^bg-(red|green|blue|yellow|gray|slate|neutral|zinc|stone|orange|amber|lime|emerald|teal|cyan|sky|indigo|violet|purple|fuchsia|pink|rose|white|black)\/(5|10|20|30|40|50|60|70|80|90|95|100)$/ },
+    { pattern: /^bg-gradient-to-(t|tr|r|br|b|bl|l|tl)$/ },
+    { pattern: /^(from|via|to)-(red|green|blue|yellow|gray|slate|neutral|zinc|stone|orange|amber|lime|emerald|teal|cyan|sky|indigo|violet|purple|fuchsia|pink|rose)-(100|200|300|400|500|600|700|800|900)$/ },
+    { pattern: /^(from|via|to)-(red|green|blue|yellow|gray|slate|neutral|zinc|stone|orange|amber|lime|emerald|teal|cyan|sky|indigo|violet|purple|fuchsia|pink|rose|white|black)\/(5|10|20|30|40|50|60|70|80|90|95|100)$/ },
+
     // === Border colors ===
     { pattern: /^border-(red|green|blue|yellow|gray|slate|neutral|zinc|stone|orange|amber|lime|emerald|teal|cyan|sky|indigo|violet|purple|fuchsia|pink|rose)-(100|200|300|400|500|600|700|800|900)$/ },
 
     // === Text size ===
-    { pattern: /^text-(xs|sm|base|lg|xl|2xl|3xl|4xl|5xl|6xl|7xl|8xl|9xl)$/ },
+    { pattern: /^text-(xs|sm|base|lg|xl|2xl|3xl|4xl|5xl|6xl|7xl|8xl|9xl)$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
 
     // === Font weight ===
-    { pattern: /^font-(thin|extralight|light|normal|medium|semibold|bold|extrabold|black)$/ },
+    { pattern: /^font-(thin|extralight|light|normal|medium|semibold|bold|extrabold|black)$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
 
     // === Padding / Margin ===
-    { pattern: /^(p|px|py|pt|pb|pl|pr)-([0-9]{1,2}|100)$/ },
-    { pattern: /^(m|mx|my|mt|mb|ml|mr)-([0-9]{1,2}|100)$/ },
+    { pattern: /^(p|px|py|pt|pb|pl|pr)-([0-9]{1,2}|100)$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
+    { pattern: /^(m|mx|my|mt|mb|ml|mr)-([0-9]{1,2}|100)$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
 
     // === Border radius ===
-    { pattern: /^rounded(-(none|sm|md|lg|xl|2xl|3xl|full))?$/ },
+    { pattern: /^rounded(-(none|sm|md|lg|xl|2xl|3xl|full))?$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
 
     // === Width / Height ===
-    { pattern: /^(w|h)-(?:[0-9]{1,2}|100|auto|full|screen|min|max|fit|[1-9]\/[1-9]|[1-9]\/10|10\/10|11\/12|5\/6|2\/5|3\/5|4\/5)$/ },
+    { pattern: /^(w|h)-(?:[0-9]{1,2}|100|auto|full|screen|min|max|fit|[1-9]\/[1-9]|[1-9]\/10|10\/10|11\/12|5\/6|2\/5|3\/5|4\/5)$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
 
     // === Flex / Grid ===
-    // Flex (kierunki i wrapowanie)
-    { pattern: /^flex(-(?:(row|row-reverse|col|col-reverse|wrap|wrap-reverse|nowrap)))?$/ },
-
-// Flex basis/grow/shrink
-    { pattern: /^flex-(1|auto|initial|none)$/ },
-
-// Align items
-    { pattern: /^items-(start|end|center|baseline|stretch)$/ },
-
-// Justify content
-    { pattern: /^justify-(start|end|center|between|around|evenly)$/ },
-
-// Gap (standardowy zakres Tailwind + pełen numer od 0 do 100)
-    { pattern: /^gap-([0-9]{1,2}|100)$/ },
-
-// Grid columns (od 1 do 12)
-    { pattern: /^grid-cols-([1-9]|1[0-2])$/ },
-
-// Grid column span
-    { pattern: /^col-span-([1-9]|1[0-2])$/ },
-
-// Grid rows (od 1 do 12)
-    { pattern: /^grid-rows-([1-9]|1[0-2])$/ },
-
-// Grid row span
-    { pattern: /^row-span-([1-9]|1[0-2])$/ },
-
-// Grow: grow, grow-0
-    { pattern: /^grow(-0)?$/ },
-
-// Shrink: shrink, shrink-0
-    { pattern: /^shrink(-0)?$/ },
+    { pattern: /^flex(-(?:(row|row-reverse|col|col-reverse|wrap|wrap-reverse|nowrap)))?$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
+    { pattern: /^flex-(1|auto|initial|none)$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
+    { pattern: /^items-(start|end|center|baseline|stretch)$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
+    { pattern: /^justify-(start|end|center|between|around|evenly)$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
+    { pattern: /^gap-([0-9]{1,2}|100)$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
+    { pattern: /^grid-cols-([1-9]|1[0-2])$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
+    { pattern: /^col-span-([1-9]|1[0-2])$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
+    { pattern: /^grid-rows-([1-9]|1[0-2])$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
+    { pattern: /^row-span-([1-9]|1[0-2])$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
+    { pattern: /^grow(-0)?$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
+    { pattern: /^shrink(-0)?$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
 
     // === Display ===
-    { pattern: /^block|inline|inline-block|flex|grid|hidden$/ },
+    { pattern: /^block|inline|inline-block|flex|grid|hidden$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
 
     // === Shadow ===
-    { pattern: /^shadow(-(sm|md|lg|xl|2xl|inner|none))?$/ },
+    { pattern: /^shadow(-(sm|md|lg|xl|2xl|inner|none))?$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
 
     // === Transition / Animation ===
     { pattern: /^transition(-(all|colors|opacity|shadow|transform))?$/ },
@@ -98,25 +69,25 @@ module.exports = {
     { pattern: /^ease-(linear|in|out|in-out)$/ },
     { pattern: /^animate-(spin|ping|pulse|bounce|none|fadeIn|fadeOut|slideIn|slideOut)$/ },
 
-    // === Hover / Focus  ===
+    // === Hover / Focus ===
     {
       pattern: /^(bg|text|border)-(red|green|blue|gray|slate|neutral|zinc|stone|yellow|orange|amber|lime|emerald|teal|cyan|sky|indigo|violet|purple|fuchsia|pink|rose)-(100|200|300|400|500|600|700|800|900)$/,
-      variants: ['hover', 'focus', 'active', 'dark'],
+      variants: ['hover', 'focus', 'active', 'dark']
     },
 
     // === Overflow / Z-index / Positioning ===
     { pattern: /^overflow-(auto|hidden|visible|scroll)$/ },
     { pattern: /^overflow-(x|y)-(auto|hidden|visible|scroll)$/ },
     { pattern: /^scroll-(auto|smooth)$/ },
-    { pattern: /^z-(0|10|20|30|40|50|auto)$/ },
+    { pattern: /^z-(0|10|20|30|40|50|auto)$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
     { pattern: /^relative|absolute|fixed|sticky$/ },
 
-    // === Ring (focus outline) ===
+    // === Ring ===
     { pattern: /^ring(-(0|1|2|4|8))?$/ },
     { pattern: /^ring-(red|blue|green|gray|purple)-(100|200|400|600)$/ },
 
     // === Opacity ===
-    { pattern: /^opacity-(0|25|50|75|100)$/ },
+    { pattern: /^opacity-(0|25|50|75|100)$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
 
     // === Theme-based classes ===
     { pattern: /^bg-(background|foreground|card|popover|primary|secondary|accent|muted|destructive)$/ },
@@ -125,9 +96,9 @@ module.exports = {
     { pattern: /^border-(input|border|ring|primary|secondary|accent|destructive)$/ },
 
     // === Text utilities ===
-    { pattern: /^tracking-(tighter|tight|normal|wide|wider|widest)$/ },
-    { pattern: /^leading-(none|tight|snug|normal|relaxed|loose)$/ },
-    { pattern: /^text-(left|center|right|justify)$/ },
+    { pattern: /^tracking-(tighter|tight|normal|wide|wider|widest)$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
+    { pattern: /^leading-(none|tight|snug|normal|relaxed|loose)$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
+    { pattern: /^text-(left|center|right|justify)$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
     { pattern: /^uppercase|lowercase|capitalize|normal-case$/ },
     { pattern: /^align-(top|middle|bottom|baseline|text-top|text-bottom)$/ },
 
@@ -138,8 +109,8 @@ module.exports = {
     { pattern: /^max-h-(0|full|min|max|screen)$/ },
 
     // === Space / Divide ===
-    { pattern: /^space-(x|y)-(0|1|2|3|4|5|6|8|10|12|16|20|24|32|40|48|56|64)$/ },
-    { pattern: /^divide-(x|y)-(0|2|4|8)$/ },
+    { pattern: /^space-(x|y)-([1-9]|1[0-2])$/ },
+    { pattern: /^divide-(x|y)-([1-9]|1[0-2])$/ },
     { pattern: /^divide-(red|gray|border)$/ },
 
     // === Interactivity ===
@@ -148,7 +119,7 @@ module.exports = {
     { pattern: /^cursor-(default|pointer|wait|text|move|not-allowed)$/ },
 
     // === Plugins / Misc ===
-    { pattern: /^aspect-(auto|square|video)$/ },
+    { pattern: /^aspect-(auto|square|video)$/ }
 
   ],
   theme: {
