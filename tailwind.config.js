@@ -119,7 +119,12 @@ module.exports = {
     { pattern: /^cursor-(default|pointer|wait|text|move|not-allowed)$/ },
 
     // === Plugins / Misc ===
-    { pattern: /^aspect-(auto|square|video)$/ }
+    { pattern: /^aspect-(auto|square|video)$/ },
+
+    { pattern: /^-(top|right|bottom|left)-([0-9]{1,2}|100)$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
+    { pattern: /^(top|right|bottom|left)-([0-9]{1,2}|100)$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
+    { pattern: /^-?inset-([0-9]{1,2}|100)$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
+    { pattern: /^-?(inset-(x|y))?-([0-9]{1,2}|100)$/, variants: ['sm', 'md', 'lg', 'xl', '2xl'] },
 
   ],
   theme: {
