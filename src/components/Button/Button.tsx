@@ -2,8 +2,16 @@ import React from 'react';
 import { Button as ButtonM, ButtonProps } from '../ui/button';
 
 
-interface ExtendedButtonProps extends ButtonProps {
+interface ExtendedButtonProps  {
   onClick?: () => void,
+  variant?: 'default' | 'destructive' | 'outline' | 'secondary' | 'ghost' | 'link'
+  size?: 'default' | 'sm' | 'lg' | 'icon'
+  type?: "submit" | "reset" | "button"
+  className?: string,
+  children?: React.ReactNode
+  disabled?: boolean
+  name?: string
+  asChild?: boolean
 }
 
 /**
