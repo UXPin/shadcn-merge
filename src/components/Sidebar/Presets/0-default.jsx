@@ -23,60 +23,62 @@ import SidebarRail from '../../SidebarRail/SidebarRail';
 import SidebarSeparator from '../../SidebarSeparator/SidebarSeparator';
 import SidebarTrigger from '../../SidebarTrigger/SidebarTrigger';
 export default (
-  <Sidebar uxpId='sidebar' className="bg-background text-foreground">
-    <SidebarHeader uxpId='sidebar-header'>SIDEBAR HEADER</SidebarHeader>
-    <SidebarContent uxpId='sidebar-content'>
-      <SidebarGroup uxpId='sidebar-group-basic-menu'>
-        <SidebarGroupLabel uxpId='sidebar-group-label-basic-menu'>
-          Basic Menu
-        </SidebarGroupLabel>
-        <SidebarGroupAction uxpId='sidebar-group-action-basic-menu'>
-          +
-        </SidebarGroupAction>
-        <SidebarGroupContent uxpId='sidebar-group-content-basic-menu'>
-          <SidebarMenu uxpId='sidebar-menu-basic'>
-            <SidebarMenuItem key='1' uxpId='sidebar-menu-item-1'>
-              <SidebarMenuButton uxpId='sidebar-menu-button-1'>
-                Menu Item
-              </SidebarMenuButton>
-            </SidebarMenuItem>
-            <SidebarMenuItem key='2' uxpId='sidebar-menu-item-2'>
-              <SidebarMenuButton uxpId='sidebar-menu-button-2'>
-                With badge
-              </SidebarMenuButton>
-              <SidebarMenuBadge uxpId='sidebar-menu-badge-1'>
-                24
-              </SidebarMenuBadge>
-            </SidebarMenuItem>
-          </SidebarMenu>
-        </SidebarGroupContent>
-      </SidebarGroup>
-      <SidebarSeparator uxpId='sidebar-separator-1' />
-      <SidebarGroup uxpId='sidebar-group-with-submenu'>
-        <SidebarGroupLabel uxpId='sidebar-group-label-with-submenu'>
-          With SubMenu
-        </SidebarGroupLabel>
-        <SidebarGroupContent uxpId='sidebar-group-content-with-submenu'>
-          <SidebarMenu uxpId='sidebar-menu-with-submenu'>
-            <SidebarMenuItem key='1' uxpId='sidebar-menu-item-with-submenu'>
-              <SidebarMenuButton uxpId='sidebar-menu-button-with-submenu'>
-                Getting Started
-              </SidebarMenuButton>
-              <SidebarMenuSub uxpId='sidebar-menu-sub-installation'>
-                <SidebarMenuSubButton uxpId='sidebar-menu-sub-button-installation'>
-                  Installation
-                </SidebarMenuSubButton>
-              </SidebarMenuSub>
-              <SidebarMenuSub uxpId='sidebar-menu-sub-getting-help'>
-                <SidebarMenuSubButton uxpId='sidebar-menu-sub-button-getting-help'>
-                  Getting Help
-                </SidebarMenuSubButton>
-              </SidebarMenuSub>
-            </SidebarMenuItem>
-          </SidebarMenu>
-        </SidebarGroupContent>
-      </SidebarGroup>
-    </SidebarContent>
-    <SidebarFooter uxpId='sidebar-footer'>SIDEBAR FOOTER</SidebarFooter>
-  </Sidebar>
+  <SidebarProvider uxpId='sidebar-provider'>
+    <Sidebar uxpId='sidebar' className="bg-background text-foreground">
+      <SidebarHeader uxpId='sidebar-header'>SIDEBAR HEADER</SidebarHeader>
+      <SidebarContent uxpId='sidebar-content'>
+        <SidebarGroup uxpId='sidebar-group-basic-menu'>
+          <SidebarGroupLabel uxpId='sidebar-group-label-basic-menu'>
+            Basic Menu
+          </SidebarGroupLabel>
+          <SidebarGroupAction uxpId='sidebar-group-action-basic-menu'>
+            +
+          </SidebarGroupAction>
+          <SidebarGroupContent uxpId='sidebar-group-content-basic-menu'>
+            <SidebarMenu uxpId='sidebar-menu-basic'>
+              <SidebarMenuItem key='1' uxpId='sidebar-menu-item-1'>
+                <SidebarMenuButton uxpId='sidebar-menu-button-1'>
+                  Menu Item
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+              <SidebarMenuItem key='2' uxpId='sidebar-menu-item-2'>
+                <SidebarMenuButton uxpId='sidebar-menu-button-2'>
+                  With badge
+                </SidebarMenuButton>
+                <SidebarMenuBadge uxpId='sidebar-menu-badge-1'>
+                  24
+                </SidebarMenuBadge>
+              </SidebarMenuItem>
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+        <SidebarSeparator uxpId='sidebar-separator-1' />
+        <SidebarGroup uxpId='sidebar-group-with-submenu'>
+          <SidebarGroupLabel uxpId='sidebar-group-label-with-submenu'>
+            With SubMenu
+          </SidebarGroupLabel>
+          <SidebarGroupContent uxpId='sidebar-group-content-with-submenu'>
+            <SidebarMenu uxpId='sidebar-menu-with-submenu'>
+              <SidebarMenuItem key='1' uxpId='sidebar-menu-item-with-submenu'>
+                <SidebarMenuButton uxpId='sidebar-menu-button-with-submenu'>
+                  Getting Started
+                </SidebarMenuButton>
+                <SidebarMenuSub uxpId='sidebar-menu-sub-installation'>
+                  <SidebarMenuSubButton uxpId='sidebar-menu-sub-button-installation'>
+                    Installation
+                  </SidebarMenuSubButton>
+                </SidebarMenuSub>
+                <SidebarMenuSub uxpId='sidebar-menu-sub-getting-help'>
+                  <SidebarMenuSubButton uxpId='sidebar-menu-sub-button-getting-help'>
+                    Getting Help
+                  </SidebarMenuSubButton>
+                </SidebarMenuSub>
+              </SidebarMenuItem>
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+      </SidebarContent>
+      <SidebarFooter uxpId='sidebar-footer'>SIDEBAR FOOTER</SidebarFooter>
+    </Sidebar>
+  </SidebarProvider>
 );

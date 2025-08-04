@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Sidebar as SidebarM } from '../ui/sidebar';
-import SidebarMenuSubItem from "../SidebarMenuSubItem/SidebarMenuSubItem";
+import { Sidebar as SidebarM, SidebarProvider } from '../ui/sidebar';
 
 /**
  * @uxpindocurl https://ui.shadcn.com/docs/components/sidebar
@@ -9,9 +8,10 @@ import SidebarMenuSubItem from "../SidebarMenuSubItem/SidebarMenuSubItem";
  */
 const Sidebar = ({ children, className, open, onOpenChange, ...props }) => {
   return (
-      <SidebarM key={props.defaultOpen} className={className} open={open} onOpenChange={onOpenChange} {...props}>
-        {children}
-      </SidebarM>
+    <SidebarM key={props.defaultOpen} className={className} open={open} onOpenChange={onOpenChange} {...props}>
+      {children}
+    </SidebarM>
+
   );
 };
 
@@ -37,7 +37,6 @@ Sidebar.propTypes = {
   className: PropTypes.string,
 };
 
-Sidebar.displayName = "Sidebar";
-
+Sidebar.displayName = 'Sidebar';
 
 export default Sidebar;

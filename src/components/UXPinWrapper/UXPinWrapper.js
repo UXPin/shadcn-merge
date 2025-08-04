@@ -2,7 +2,6 @@
 import React from 'react';
 import './App.css';
 import { ErrorBoundary } from 'react-error-boundary';
-import { SidebarProvider } from "../ui/sidebar";
 
 function ErrorFallback({ error }) {
   return (
@@ -14,6 +13,6 @@ function ErrorFallback({ error }) {
 
 export default function UXPinWrapper({ children }) {
   return (
-      <ErrorBoundary FallbackComponent={ErrorFallback}><SidebarProvider>{children}</SidebarProvider></ErrorBoundary>
+    <ErrorBoundary FallbackComponent={ErrorFallback}>{children}</ErrorBoundary>
   );
 }
