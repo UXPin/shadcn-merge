@@ -1,12 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Sidebar as SidebarM, SidebarProvider } from '../ui/sidebar';
+import {Sidebar as SidebarM, SidebarContext, SidebarProvider} from '../ui/sidebar';
 
 /**
  * @uxpindocurl https://ui.shadcn.com/docs/components/sidebar
  * @uxpindescription Primary sidebar layout container.
  */
 const Sidebar = ({ children, className, open, onOpenChange, ...props }) => {
+  const context = React.useContext(SidebarContext);
+  if (!context) {
+    return <SidebarProvider key={props.defaultOpen}  open={open} onOpenChange={onOpenChange}>
+      <SidebarM className={className} {...props}>
+        {children}
+      </SidebarM>
+    </SidebarProvider>
+  }
+
   return (
     <SidebarM key={props.defaultOpen} className={className} open={open} onOpenChange={onOpenChange} {...props}>
       {children}
