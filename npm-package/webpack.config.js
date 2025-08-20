@@ -11,9 +11,13 @@ const config = {
     library: 'Shadcn',
     libraryTarget: 'umd'
   },
+  externals: {
+    'react': 'react',
+    'react-dom': 'react-dom'
+  },
   optimization: {
     minimizer: [
-      `...`,  // zachowuje domyślne minimizery (JS)
+      `...`,
       new CssMinimizerPlugin({
         minimizerOptions: {
           preset: [
