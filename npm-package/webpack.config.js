@@ -8,6 +8,10 @@ const config = {
     library: 'MojPakiet',
     libraryTarget: 'umd'
   },
+  externals: {
+    'react': 'react',
+    'react-dom': 'react-dom'
+  },
   module: {
     rules: [
       {

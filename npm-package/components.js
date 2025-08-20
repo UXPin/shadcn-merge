@@ -1,5 +1,3 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
 import Accordion from '../src/components/Accordion/Accordion';
 import Alert from '../src/components/Alert/Alert';
 import AlertDialog from '../src/components/AlertDialog/AlertDialog';
@@ -513,6 +511,4 @@ export {
   SidebarTrigger,
   SidebarProvider,
   Wrapper,
-  React,
-  ReactDOM,
 };
