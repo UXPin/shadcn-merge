@@ -1,17 +1,36 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+
 
 const config = {
   entry: ['./components.js'],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
-    library: 'MojPakiet',
+    library: 'Shadcn',
     libraryTarget: 'umd'
   },
-  externals: {
-    'react': 'react',
-    'react-dom': 'react-dom'
+  optimization: {
+    minimizer: [
+      `...`,  // zachowuje domyślne minimizery (JS)
+      new CssMinimizerPlugin({
+        minimizerOptions: {
+          preset: [
+            'default',
+            {
+              discardComments: { removeAll: true },
+            },
+          ],
+        },
+      }),
+    ],
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'styles.css'
+    })
+  ],
   module: {
     rules: [
       {
@@ -35,7 +54,7 @@ const config = {
       {
         test: /\.css$/,
         use: [
-          'style-loader',
+          MiniCssExtractPlugin.loader,
           { loader: 'css-loader', options: { importLoaders: 1 } },
           'postcss-loader',
         ],
