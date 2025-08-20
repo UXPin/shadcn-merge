@@ -58,6 +58,9 @@
       "react-app/jest"
     ]
   },
+  "workspaces": [
+    "npm-package"
+  ],
   "browserslist": {
     "production": [
       ">0.2%",
