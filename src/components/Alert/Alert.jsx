@@ -14,7 +14,10 @@ Alert.propTypes = {
   /** The content inside the alert */
   children: PropTypes.node,
 
-  /** Custom class names for styling */
+  /** Custom class names for styling
+   *
+   *  @uxpincontroltype tailwindclassname
+   * */
   className: PropTypes.string,
 
   /** Specifies the alert variant */
