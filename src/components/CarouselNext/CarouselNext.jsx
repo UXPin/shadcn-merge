@@ -11,7 +11,9 @@ const CarouselNext = ({ children, className, ...props }) => {
 };
 
 CarouselNext.propTypes = {
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** Variant for the button. */
   variant: PropTypes.oneOf([

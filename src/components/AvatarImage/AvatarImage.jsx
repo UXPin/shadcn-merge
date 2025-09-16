@@ -14,7 +14,9 @@ AvatarImage.propTypes = {
   /** Alternative text for the avatar image */
   alt: PropTypes.string,
 
-  /** Additional class names for styling */
+  /** Additional class names for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 
   /** Image source URL

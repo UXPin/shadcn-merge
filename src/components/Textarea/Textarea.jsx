@@ -37,7 +37,9 @@ Textarea.propTypes = {
   minLength: PropTypes.number,
   /** Whether the textarea can be resized by the user */
   wrap: PropTypes.oneOf(['soft', 'hard', 'off']),
-  /** Additional CSS classes */
+  /** Additional CSS classes
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** ARIA label for accessibility */
   'aria-label': PropTypes.string,

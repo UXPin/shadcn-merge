@@ -17,7 +17,9 @@ const DialogClose = ({ children, className, ...props }) => {
 DialogClose.propTypes = {
   /** The content of DialogClose. */
   children: PropTypes.node,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

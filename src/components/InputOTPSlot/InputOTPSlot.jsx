@@ -11,7 +11,9 @@ const InputOTPSlot = ({ children, className, ...props }) => {
 };
 
 InputOTPSlot.propTypes = {
-  /** Additional className for styling */
+  /** Additional className for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

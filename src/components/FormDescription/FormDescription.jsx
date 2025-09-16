@@ -17,7 +17,9 @@ const FormDescription = ({ children, className, ...props }) => {
 FormDescription.propTypes = {
   /** Description text or node */
   children: PropTypes.node,
-  /** Additional class name for styling the description */
+  /** Additional class name for styling the description
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

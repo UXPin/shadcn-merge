@@ -21,7 +21,9 @@ ToastViewport.propTypes = {
   hotkey: PropTypes.arrayOf(PropTypes.string),
   /** An author-localized label for the toast viewport to provide context for screen reader users when navigating page landmarks. */
   label: PropTypes.string,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

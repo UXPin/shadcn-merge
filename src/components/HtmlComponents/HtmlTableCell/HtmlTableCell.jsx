@@ -124,7 +124,9 @@ HtmlTableCell.propTypes = {
   /** Specifies the width of the table border. */
   borderWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 
-  /** Add classes */
+  /** Add classes
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 
   /** Specifies the color of the table.

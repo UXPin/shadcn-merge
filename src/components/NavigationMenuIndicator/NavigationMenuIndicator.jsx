@@ -16,6 +16,9 @@ const NavigationMenuIndicator = ({ children, className, ...props }) => {
 
 NavigationMenuIndicator.propTypes = {
   children: PropTypes.node,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

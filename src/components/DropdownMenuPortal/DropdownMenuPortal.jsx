@@ -18,7 +18,9 @@ DropdownMenuPortal.propTypes = {
   /** The content inside the dropdown portal */
   children: PropTypes.node.isRequired,
 
-  /** Additional class names for styling */
+  /** Additional class names for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

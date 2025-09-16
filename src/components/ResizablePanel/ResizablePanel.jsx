@@ -17,7 +17,9 @@ const ResizablePanel = ({ children, className, defaultSize, ...props }) => {
 ResizablePanel.propTypes = {
   /** Arbitrary React element(s) */
   children: PropTypes.node,
-  /** Class name to attach to root element */
+  /** Class name to attach to root element
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** Panel should collapse to this size
    * @uxpinignoreprop

@@ -10,6 +10,9 @@ const ChartTooltip = (props) => <ChartTooltipM {...props} />;
 
 ChartTooltip.propTypes = {
   children: PropTypes.node,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   config: PropTypes.object,
 };

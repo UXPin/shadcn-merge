@@ -29,7 +29,9 @@ Tabs.propTypes = {
   loop: PropTypes.bool,
   /** Tab elements as children (List, Trigger, Content). */
   children: PropTypes.node,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

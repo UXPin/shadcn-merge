@@ -17,7 +17,9 @@ const PopoverContent = ({ children, className, ...props }) => {
 PopoverContent.propTypes = {
   /** Content children components. */
   children: PropTypes.node,
-  /** Additional classes to style the  component. */
+  /** Additional classes to style the  component.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** When true, the child component will receive all properties.
    * @uxpinignoreprop

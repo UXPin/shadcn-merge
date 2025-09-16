@@ -121,7 +121,9 @@ HtmlTable.propTypes = {
    */
   borderWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 
-  /** Add Bootstrap classes */
+  /** Add Bootstrap classes
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.object,
 
   /**

@@ -10,6 +10,9 @@ function CardTitle(props) {
 }
 
 CardTitle.propTypes = {
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   children: PropTypes.node,
 };

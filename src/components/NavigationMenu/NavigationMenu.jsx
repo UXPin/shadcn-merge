@@ -17,7 +17,9 @@ const NavigationMenu = ({ children, className, ...props }) => {
 NavigationMenu.propTypes = {
   /** If true, renders the component as a child element. */
   asChild: PropTypes.bool,
-  /** Additional class names for styling */
+  /** Additional class names for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** The value of the menu item that should be active when initially rendered. */
   defaultValue: PropTypes.string,

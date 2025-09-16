@@ -17,7 +17,9 @@ const CommandEmpty = ({ children, className, ...props }) => {
 CommandEmpty.propTypes = {
   /** CommandEmpty content */
   children: PropTypes.node,
-  /** Additional className for styling */
+  /** Additional className for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

@@ -11,7 +11,9 @@ const SidebarTrigger = (props) => {
 };
 
 SidebarTrigger.propTypes = {
-  /** Additional CSS class for styling */
+  /** Additional CSS class for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** Click handler */
   onClick: PropTypes.func,

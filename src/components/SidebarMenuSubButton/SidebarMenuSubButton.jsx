@@ -19,7 +19,9 @@ SidebarMenuSubButton.propTypes = {
   /** Submenu button content */
   children: PropTypes.node,
 
-  /** Additional CSS class for styling */
+  /** Additional CSS class for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** Render a custom element as child
    * @uxpinignoreprop

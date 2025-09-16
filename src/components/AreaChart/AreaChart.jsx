@@ -71,6 +71,9 @@ AreaChart.propTypes = {
   enableGrid: PropTypes.bool,
   enableLegend: PropTypes.bool,
   enableTooltip: PropTypes.bool,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   xTickFormatter: PropTypes.func,
   yTickFormatter: PropTypes.func,

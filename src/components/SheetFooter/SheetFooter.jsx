@@ -16,6 +16,9 @@ const SheetFooter = ({ children, className, ...props }) => {
 
 SheetFooter.propTypes = {
   children: PropTypes.node,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

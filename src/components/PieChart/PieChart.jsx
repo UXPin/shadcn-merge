@@ -60,5 +60,8 @@ PieChart.propTypes = {
   dataKey: PropTypes.string,
   enableLegend: PropTypes.bool,
   enableTooltip: PropTypes.bool,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };

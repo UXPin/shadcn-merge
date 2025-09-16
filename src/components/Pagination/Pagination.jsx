@@ -18,7 +18,9 @@ Pagination.propTypes = {
   /** The content of the pagination component. */
   children: PropTypes.node,
 
-  /** Additional classes to style the pagination component. */
+  /** Additional classes to style the pagination component.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

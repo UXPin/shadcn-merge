@@ -17,7 +17,9 @@ const DialogHeader = ({ children, className, ...props }) => {
 DialogHeader.propTypes = {
   /** The content of the header. */
   children: PropTypes.node,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

@@ -30,7 +30,9 @@ ContextMenu.propTypes = {
    * @uxpinignoreprop
    */
   onOpenChange: PropTypes.func,
-  /** Additional CSS classes for styling. */
+  /** Additional CSS classes for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

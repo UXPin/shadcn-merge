@@ -17,7 +17,9 @@ const TableCaption = ({ children, className, ...props }) => {
 TableCaption.propTypes = {
   /** The content of the TableCaption. */
   children: PropTypes.node.isRequired,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

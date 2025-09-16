@@ -15,7 +15,9 @@ const PaginationContent = React.forwardRef(({ children, ...props }, ref) => (
 PaginationContent.propTypes = {
   /** The content of the pagination container. */
   children: PropTypes.node,
-  /** Additional classes to style the  component. */
+  /** Additional classes to style the  component.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

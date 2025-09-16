@@ -15,7 +15,9 @@ const DialogTitle = ({ children, className, ...props }) => {
 };
 
 DialogTitle.propTypes = {
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** The content of the title. */
   children: PropTypes.node.isRequired,

@@ -16,6 +16,9 @@ const MenubarSubContent = ({ children, className, ...props }) => {
 
 MenubarSubContent.propTypes = {
   children: PropTypes.node,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

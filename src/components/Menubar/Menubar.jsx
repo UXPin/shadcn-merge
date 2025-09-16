@@ -19,7 +19,9 @@ Menubar.propTypes = {
    * @uxpinignoreprop
    */
   asChild: PropTypes.bool,
-  /** Additional classes to style the menubar. */
+  /** Additional classes to style the menubar.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** The controlled value of the menubar.
    * @uxpinbind onValueChange 0

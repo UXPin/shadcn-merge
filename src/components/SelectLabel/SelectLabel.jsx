@@ -17,7 +17,9 @@ const SelectLabel = ({ children, className, ...props }) => {
 SelectLabel.propTypes = {
   /** The content of the Label. */
   children: PropTypes.node.isRequired,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

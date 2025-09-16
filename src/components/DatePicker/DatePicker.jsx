@@ -90,6 +90,9 @@ DatePicker.propTypes = {
   onOpenChange: PropTypes.func,
   placeholder: PropTypes.string,
   disabled: PropTypes.bool,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   popoverClassName: PropTypes.string,
   buttonClassName: PropTypes.string,

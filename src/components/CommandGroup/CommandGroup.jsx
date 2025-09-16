@@ -23,7 +23,9 @@ CommandGroup.propTypes = {
   forceMount: PropTypes.bool,
   /** Children */
   children: PropTypes.node,
-  /** Additional className for styling */
+  /** Additional className for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

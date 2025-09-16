@@ -10,6 +10,9 @@ function CardFooter(props) {
 }
 
 CardFooter.propTypes = {
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   children: PropTypes.node,
 };

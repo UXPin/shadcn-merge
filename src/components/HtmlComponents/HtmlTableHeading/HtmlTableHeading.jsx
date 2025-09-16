@@ -125,7 +125,9 @@ HtmlTableHeading.propTypes = {
   /** Specifies the width of the table border. */
   borderWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 
-  // /** Add Bootstrap classes */
+ /** Add Bootstrap classes
+  * @uxpincontroltype tailwindclassname
+  */
   className: PropTypes.string,
 
   /** Specifies the color of the table.

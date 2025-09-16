@@ -17,7 +17,9 @@ const TooltipTrigger = ({ children, className, ...props }) => {
 TooltipTrigger.propTypes = {
   /** Child tab triggers. */
   children: PropTypes.node,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** If true, the trigger will not render a default DOM element but will instead clone its child and pass the necessary props to it.
    * @uxpinignoreprop

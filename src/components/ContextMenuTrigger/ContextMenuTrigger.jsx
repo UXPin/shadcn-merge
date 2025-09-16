@@ -16,6 +16,9 @@ const ContextMenuTrigger = ({ children, className, ...props }) => {
 
 ContextMenuTrigger.propTypes = {
   children: PropTypes.node,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

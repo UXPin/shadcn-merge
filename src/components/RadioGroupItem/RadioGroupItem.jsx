@@ -17,7 +17,9 @@ const RadioGroupItem = ({ children, className, ...props }) => {
 RadioGroupItem.propTypes = {
   /** Content inside the item */
   children: PropTypes.node,
-  /** Additional classes to style the  component. */
+  /** Additional classes to style the  component.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 
   /** If true, renders the component as its child component

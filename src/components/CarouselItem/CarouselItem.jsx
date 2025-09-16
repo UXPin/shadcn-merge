@@ -15,7 +15,9 @@ const CarouselItem = ({ children, className, ...props }) => {
 };
 
 CarouselItem.propTypes = {
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** Slide content. */
   children: PropTypes.node,

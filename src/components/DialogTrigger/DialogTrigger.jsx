@@ -17,7 +17,9 @@ const DialogTrigger = ({ children, className, ...props }) => {
 DialogTrigger.propTypes = {
   /** The content of the DialogTrigger. */
   children: PropTypes.node,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

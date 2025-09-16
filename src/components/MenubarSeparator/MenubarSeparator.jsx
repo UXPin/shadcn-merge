@@ -22,6 +22,9 @@ MenubarSeparator.propTypes = {
   /** Child components to render inside the MenubarSeparator. */
   children: PropTypes.node,
 
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

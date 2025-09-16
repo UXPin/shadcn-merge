@@ -15,6 +15,9 @@ export default function Header4({ className = '', children, ...props }) {
 }
 
 Header4.propTypes = {
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   children: PropTypes.node,
 }; 

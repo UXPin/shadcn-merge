@@ -25,7 +25,9 @@ ContextMenuContent.propTypes = {
    * @uxpinignoreprop
    */
   align: PropTypes.oneOf(['start', 'center', 'end']),
-  /** Additional CSS classes for styling. */
+  /** Additional CSS classes for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

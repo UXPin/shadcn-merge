@@ -22,7 +22,9 @@ ToastClose.propTypes = {
    * @uxpinignoreprop
    */
   asChild: PropTypes.bool,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

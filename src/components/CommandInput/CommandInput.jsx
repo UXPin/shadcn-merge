@@ -17,7 +17,9 @@ CommandInput.propTypes = {
   value: PropTypes.string,
   /** Handler for search value change */
   onValueChange: PropTypes.func,
-  /** Additional className for styling */
+  /** Additional className for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

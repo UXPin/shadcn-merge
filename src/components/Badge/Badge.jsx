@@ -11,6 +11,9 @@ function Badge(props) {
 
 Badge.propTypes = {
   children: PropTypes.node,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   variant: PropTypes.oneOf(['default', 'secondary', 'outline', 'destructive']),
 };

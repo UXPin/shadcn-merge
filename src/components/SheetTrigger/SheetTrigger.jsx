@@ -16,6 +16,9 @@ const SheetTrigger = ({ children, className, ...props }) => {
 
 SheetTrigger.propTypes = {
   children: PropTypes.node,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

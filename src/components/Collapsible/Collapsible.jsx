@@ -43,7 +43,9 @@ Collapsible.propTypes = {
   /** The content inside the collapsible container */
   children: PropTypes.node,
 
-  /** Additional class names for styling */
+  /** Additional class names for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 
   /** Event handler called when the open state of the collapsible changes. */

@@ -17,7 +17,9 @@ const TableBody = ({ children, className, ...props }) => {
 TableBody.propTypes = {
   /** The content of the TableBody. */
   children: PropTypes.node.isRequired,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

@@ -7,6 +7,9 @@ interface ExtendedButtonProps  {
   variant?: 'default' | 'destructive' | 'outline' | 'secondary' | 'ghost' | 'link'
   size?: 'default' | 'sm' | 'lg' | 'icon'
   type?: "submit" | "reset" | "button"
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className?: string,
   children?: React.ReactNode
   disabled?: boolean

@@ -16,6 +16,9 @@ const MenubarShortcut = ({ children, className, ...props }) => {
 
 MenubarShortcut.propTypes = {
   children: PropTypes.node,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

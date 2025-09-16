@@ -16,7 +16,9 @@ const SidebarContent = ({ children, className, ...props }) => {
 };
 
 SidebarContent.propTypes = {
-  /** Additional CSS class for styling */
+  /** Additional CSS class for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** Content children */
   children: PropTypes.node,

@@ -17,7 +17,9 @@ const BreadcrumbSeparator = ({ children, className, ...props }) => {
 BreadcrumbSeparator.propTypes = {
   /** Optional custom separator content (e.g. icon or character). */
   children: PropTypes.node,
-  /** Additional class names for styling. */
+  /** Additional class names for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

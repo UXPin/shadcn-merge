@@ -174,7 +174,9 @@ HtmlDiv.propTypes = {
    */
   bottom: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 
-  /** Add classes */
+  /** Add classes
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 
   /**

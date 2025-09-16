@@ -16,7 +16,9 @@ SidebarGroupAction.propTypes = {
   children: PropTypes.node,
   /** Click handler */
   onClick: PropTypes.func,
-  /** Additional CSS class for styling */
+  /** Additional CSS class for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** Render a custom element as child
    * @uxpinignoreprop

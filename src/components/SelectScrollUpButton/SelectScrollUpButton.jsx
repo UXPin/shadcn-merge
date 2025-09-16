@@ -17,7 +17,9 @@ const SelectScrollUpButton = ({ children, className, ...props }) => {
 SelectScrollUpButton.propTypes = {
   /** The content of the SelectScrollUpButton. */
   children: PropTypes.node.isRequired,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** Change the default rendered element for the one passed as a child, merging their props and behavior.
    * @uxpinignoreprop

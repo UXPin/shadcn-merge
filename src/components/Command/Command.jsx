@@ -37,7 +37,9 @@ Command.propTypes = {
   disablePointerSelection: PropTypes.bool,
   /** Enable or disable vim-style bindings (ctrl+j/k etc). */
   vimBindings: PropTypes.bool,
-  /** Additional className for styling */
+  /** Additional className for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

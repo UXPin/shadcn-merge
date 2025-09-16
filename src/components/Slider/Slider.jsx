@@ -14,7 +14,9 @@ Slider.propTypes = {
    * @uxpinignoreprop
    */
   asChild: PropTypes.bool,
-  /** The additional CSS classes for styling. */
+  /** The additional CSS classes for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** Child components to render inside the slider. */
   children: PropTypes.node,

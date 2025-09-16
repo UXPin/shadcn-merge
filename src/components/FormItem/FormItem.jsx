@@ -17,7 +17,9 @@ const FormItem = ({ children, className, ...props }) => {
 FormItem.propTypes = {
   /** Content of the form item */
   children: PropTypes.node,
-  /** Additional class name for styling the wrapper */
+  /** Additional class name for styling the wrapper
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

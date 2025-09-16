@@ -12,7 +12,9 @@ const SidebarMenuSkeleton = (props) => {
 };
 
 SidebarMenuSkeleton.propTypes = {
-  /** Additional CSS class for styling */
+  /** Additional CSS class for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** Whether to show skeleton icon */
   showIcon: PropTypes.bool,

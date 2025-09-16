@@ -32,7 +32,9 @@ DropdownMenuContent.propTypes = {
   alignOffset: PropTypes.number,
   /** If true, prevents the menu from colliding with viewport edges. */
   avoidCollisions: PropTypes.bool,
-  /** Additional CSS classes for styling. */
+  /** Additional CSS classes for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** The collision boundary for the menu. */
   collisionBoundary: PropTypes.oneOfType([

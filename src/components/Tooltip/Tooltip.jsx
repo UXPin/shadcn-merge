@@ -32,7 +32,9 @@ Tooltip.propTypes = {
   delayDuration: PropTypes.number,
   /** If true, prevents the tooltip content from being hoverable. */
   disableHoverableContent: PropTypes.bool,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

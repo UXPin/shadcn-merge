@@ -11,6 +11,9 @@ const Input = ({ className, ...props }) => {
 };
 
 Input.propTypes = {
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   placeholder: PropTypes.string,
   /** The value of the input element.

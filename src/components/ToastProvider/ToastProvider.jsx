@@ -26,7 +26,9 @@ ToastProvider.propTypes = {
   swipeDirection: PropTypes.oneOf(['right', 'left', 'up', 'down']),
   /** Distance in pixels that the swipe must pass before a close is triggered. */
   swipeThreshold: PropTypes.number,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

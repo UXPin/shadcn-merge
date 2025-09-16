@@ -16,6 +16,9 @@ const DrawerHeader = ({ children, className, ...props }) => {
 
 DrawerHeader.propTypes = {
   children: PropTypes.node,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

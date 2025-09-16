@@ -21,7 +21,9 @@ TableCell.propTypes = {
   colspan: PropTypes.number,
   /** Sets the number of rows a cell should span */
   rowspan: PropTypes.number,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** A callback function for when this component is clicked. */
   onClick: PropTypes.func,

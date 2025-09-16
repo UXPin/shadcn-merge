@@ -13,7 +13,9 @@ const Calendar = (props) => {
 };
 
 Calendar.propTypes = {
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** Object with class name mappings for different calendar parts. */
   // classNames: PropTypes.object,

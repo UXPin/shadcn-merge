@@ -16,6 +16,9 @@ const ContextMenuLabel = ({ children, className, ...props }) => {
 
 ContextMenuLabel.propTypes = {
   children: PropTypes.node,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

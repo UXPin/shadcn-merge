@@ -17,7 +17,9 @@ const FormMessage = ({ children, className, ...props }) => {
 FormMessage.propTypes = {
   /** Message content (if not derived from error message) */
   children: PropTypes.node,
-  /** Additional class name for styling the message */
+  /** Additional class name for styling the message
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

@@ -15,6 +15,9 @@ export default function Paragraph({ className = '', children, ...props }) {
 }
 
 Paragraph.propTypes = {
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   children: PropTypes.node,
 }; 

@@ -43,7 +43,9 @@ Toast.propTypes = {
   duration: PropTypes.number,
   /** The type of toast, used for styling. */
   type: PropTypes.oneOf(['foreground', 'background']),
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

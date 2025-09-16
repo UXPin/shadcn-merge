@@ -26,6 +26,9 @@ MenubarItem.propTypes = {
   /** Child components to render inside the MenubarItem. */
   children: PropTypes.node,
 
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

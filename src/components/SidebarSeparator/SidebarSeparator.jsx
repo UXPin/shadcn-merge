@@ -11,7 +11,9 @@ const SidebarSeparator = (props) => {
 };
 
 SidebarSeparator.propTypes = {
-  /** Additional CSS class for styling */
+  /** Additional CSS class for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

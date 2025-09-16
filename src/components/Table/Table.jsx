@@ -17,7 +17,9 @@ const Table = ({ children, className, ...props }) => {
 Table.propTypes = {
   /** The content of the Table. */
   children: PropTypes.node,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

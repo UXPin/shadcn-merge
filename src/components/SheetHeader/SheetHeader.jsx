@@ -16,6 +16,9 @@ const SheetHeader = ({ children, className, ...props }) => {
 
 SheetHeader.propTypes = {
   children: PropTypes.node,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

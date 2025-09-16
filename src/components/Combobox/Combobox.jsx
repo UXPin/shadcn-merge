@@ -102,6 +102,9 @@ Combobox.propTypes = {
   placeholder: PropTypes.string,
   searchPlaceholder: PropTypes.string,
   disabled: PropTypes.bool,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   popoverClassName: PropTypes.string,
   inputClassName: PropTypes.string,

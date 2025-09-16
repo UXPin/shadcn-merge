@@ -35,7 +35,9 @@ CommandDialog.propTypes = {
   onOpenChange: PropTypes.func,
   /** Children inside the dialog */
   children: PropTypes.node,
-  /** Additional className for styling */
+  /** Additional className for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 
