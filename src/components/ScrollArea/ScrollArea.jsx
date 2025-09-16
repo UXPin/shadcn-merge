@@ -21,7 +21,9 @@ const ScrollArea = ({ children, className, ...props }) => {
 ScrollArea.propTypes = {
   /** Children nodes */
   children: PropTypes.node,
-  /** Additional CSS classes */
+  /** Additional CSS classes
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** Height of the scroll-area */
   height: PropTypes.number,

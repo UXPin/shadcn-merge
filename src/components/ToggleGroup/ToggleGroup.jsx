@@ -52,7 +52,9 @@ ToggleGroup.propTypes = {
   dir: PropTypes.oneOf(['ltr', 'rtl']),
   /** When false, navigating through the items using arrow keys will be disabled. */
   rovingFocus: PropTypes.bool,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

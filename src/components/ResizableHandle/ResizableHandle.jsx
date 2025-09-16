@@ -13,7 +13,9 @@ const ResizableHandle = ({ children, className, ...props }) => {
 ResizableHandle.propTypes = {
   /** Custom drag UI; can be any arbitrary React element(s) */
   children: PropTypes.node,
-  /** Class name to attach to root element */
+  /** Class name to attach to root element
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   withHandle: PropTypes.bool,
   /** Allow margin when determining resizable handle hit detection

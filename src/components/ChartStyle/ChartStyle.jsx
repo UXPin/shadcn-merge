@@ -10,6 +10,9 @@ const ChartStyle = (props) => <ChartStyleM {...props} />;
 
 ChartStyle.propTypes = {
   children: PropTypes.node,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   config: PropTypes.object,
 };

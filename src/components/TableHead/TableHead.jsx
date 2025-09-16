@@ -17,7 +17,9 @@ const TableHead = ({ children, className, ...props }) => {
 TableHead.propTypes = {
   /** The content of the TableFooter. */
   children: PropTypes.node.isRequired,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** A callback function for when this component is clicked. */
   onClick: PropTypes.func,

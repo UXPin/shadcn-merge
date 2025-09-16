@@ -18,7 +18,9 @@ AccordionTrigger.propTypes = {
   /** The trigger text or content */
   children: PropTypes.node.isRequired,
 
-  /** Additional class names for styling */
+  /** Additional class names for styling
+   * @uxpincontroltype tailwindclassname
+   * */
   className: PropTypes.string,
 };
 

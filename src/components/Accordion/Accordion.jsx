@@ -35,7 +35,9 @@ Accordion.propTypes = {
   dir: PropTypes.oneOf(['ltr', 'rtl']),
   /** The orientation of the accordion. */
   orientation: PropTypes.oneOf(['vertical', 'horizontal']),
-  /** Additional CSS classes for styling. */
+  /** Additional CSS classes for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** Child components to render inside the AccordionRoot. */
   children: PropTypes.node,

@@ -42,7 +42,9 @@ Sidebar.propTypes = {
   variant: PropTypes.oneOf(['sidebar', 'floating', 'inset']),
   /** Type of collapsible behavior */
   collapsible: PropTypes.oneOf(['offcanvas', 'icon', 'none']),
-  /** Additional CSS class for styling */
+  /** Additional CSS class for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

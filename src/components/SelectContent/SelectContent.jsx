@@ -29,7 +29,9 @@ SelectContent.propTypes = {
   align: PropTypes.oneOf(['start', 'center', 'end']),
   /** The distance in pixels from the trigger. */
   sideOffset: PropTypes.number,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** The content of the select dropdown. */
   children: PropTypes.node.isRequired,

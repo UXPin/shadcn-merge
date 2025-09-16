@@ -13,7 +13,9 @@ const PaginationPrevious = React.forwardRef(({ href, ...props }, ref) => (
 PaginationPrevious.propTypes = {
   /** URL to navigate to the previous page. */
   href: PropTypes.string.isRequired,
-  /** Additional classes to style the  component. */
+  /** Additional classes to style the  component.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

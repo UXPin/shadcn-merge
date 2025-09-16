@@ -19,6 +19,9 @@ ContextMenuSubTrigger.propTypes = {
   children: PropTypes.node.isRequired,
   /** If true, the trigger is disabled. */
   disabled: PropTypes.bool,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

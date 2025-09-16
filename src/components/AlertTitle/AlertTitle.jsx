@@ -14,7 +14,9 @@ AlertTitle.propTypes = {
   /** The content inside the alert title */
   children: PropTypes.node,
 
-  /** Custom class names for styling */
+  /** Custom class names for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

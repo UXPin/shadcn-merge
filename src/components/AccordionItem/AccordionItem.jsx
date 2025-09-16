@@ -21,7 +21,9 @@ AccordionItem.propTypes = {
   /** The child components (AccordionTrigger, AccordionContent) inside the AccordionItem */
   children: PropTypes.node,
 
-  /** Additional class names for styling */
+  /** Additional class names for styling
+   * @uxpincontroltype tailwindclassname
+   * */
   className: PropTypes.string,
 };
 

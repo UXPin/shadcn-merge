@@ -17,7 +17,9 @@ const BreadcrumbItem = ({ children, className, ...props }) => {
 BreadcrumbItem.propTypes = {
   /** React children nodes (usually links or pages). */
   children: PropTypes.node,
-  /** Additional class names for styling. */
+  /** Additional class names for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

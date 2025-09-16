@@ -19,7 +19,9 @@ FormControl.propTypes = {
   children: PropTypes.node,
   /** Slot props like input, select, etc. */
   id: PropTypes.string,
-  /** Additional class name or slot-level customization */
+  /** Additional class name or slot-level customization
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

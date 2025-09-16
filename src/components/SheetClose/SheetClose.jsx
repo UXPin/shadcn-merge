@@ -16,6 +16,9 @@ const SheetClose = ({ children, className, ...props }) => {
 
 SheetClose.propTypes = {
   children: PropTypes.node,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

@@ -21,6 +21,9 @@ ContextMenuItem.propTypes = {
   disabled: PropTypes.bool,
   /** Callback fired when the item is selected. */
   onSelect: PropTypes.func,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

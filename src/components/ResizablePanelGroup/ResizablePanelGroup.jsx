@@ -21,7 +21,9 @@ ResizablePanelGroup.propTypes = {
   autoSaveId: PropTypes.string,
   /** Arbitrary React element(s) */
   children: PropTypes.node,
-  /** Class name to attach to root element */
+  /** Class name to attach to root element
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** Group orientation */
   direction: PropTypes.oneOf(['horizontal', 'vertical']).isRequired,

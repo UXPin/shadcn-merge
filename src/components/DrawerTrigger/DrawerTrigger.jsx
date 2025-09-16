@@ -16,6 +16,9 @@ const DrawerTrigger = ({ children, className, ...props }) => {
 
 DrawerTrigger.propTypes = {
   children: PropTypes.node.isRequired,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

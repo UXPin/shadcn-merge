@@ -35,7 +35,9 @@ HoverCardContent.propTypes = {
   /** Align position relative to the trigger */
   align: PropTypes.oneOf(['start', 'center', 'end']),
 
-  /** Additional class names for styling */
+  /** Additional class names for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

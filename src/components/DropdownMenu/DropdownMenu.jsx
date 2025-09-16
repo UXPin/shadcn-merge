@@ -19,7 +19,9 @@ DropdownMenu.propTypes = {
   dir: PropTypes.oneOf(['ltr', 'rtl']),
   /** If true, opens the dropdown menu by default. */
   defaultOpen: PropTypes.bool,
-  /** Additional CSS classes for styling. */
+  /** Additional CSS classes for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** If true, the dropdown menu is modal.
    * @uxpinignoreprop

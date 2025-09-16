@@ -19,7 +19,9 @@ SidebarMenu.propTypes = {
   /** Menu children */
   children: PropTypes.node,
 
-  /** Additional CSS class for styling */
+  /** Additional CSS class for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

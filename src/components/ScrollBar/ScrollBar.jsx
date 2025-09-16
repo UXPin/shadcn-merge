@@ -17,7 +17,9 @@ const ScrollBar = ({ children, className, ...props }) => {
 ScrollBar.propTypes = {
   /** Children nodes */
   children: PropTypes.node,
-  /** Additional CSS classes */
+  /** Additional CSS classes
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** Change the rendered element for the one passed as a child
    * @uxpinignoreprop

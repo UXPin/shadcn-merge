@@ -19,7 +19,9 @@ SelectGroup.propTypes = {
    * @uxpinignoreprop
    */
   asChild: PropTypes.bool,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** The content of the group. */
   children: PropTypes.node,

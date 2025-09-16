@@ -16,6 +16,9 @@ const InputOTPGroup = ({ children, className, ...props }) => {
 
 InputOTPGroup.propTypes = {
   children: PropTypes.node,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

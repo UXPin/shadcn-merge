@@ -10,6 +10,9 @@ const ChartContainer = (props) => <ChartContainerM {...props} />;
 
 ChartContainer.propTypes = {
   children: PropTypes.node,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   config: PropTypes.object,
 };

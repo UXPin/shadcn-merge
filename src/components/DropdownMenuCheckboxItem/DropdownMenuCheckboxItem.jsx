@@ -32,7 +32,9 @@ DropdownMenuCheckboxItem.propTypes = {
   defaultChecked: PropTypes.bool,
   /** Event handler called when the checked state of the item changes. */
   onCheckedChange: PropTypes.func,
-  /** Additional CSS classes for styling. */
+  /** Additional CSS classes for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** Child components to render inside the DropdownMenuCheckboxItem. */
   children: PropTypes.node,

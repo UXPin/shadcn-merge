@@ -21,6 +21,9 @@ ContextMenuSub.propTypes = {
   open: PropTypes.bool,
   /** Callback fired when the open state changes. */
   onOpenChange: PropTypes.func,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

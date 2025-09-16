@@ -17,7 +17,9 @@ const DialogFooter = ({ children, className, ...props }) => {
 DialogFooter.propTypes = {
   /** The content of the footer. */
   children: PropTypes.node,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

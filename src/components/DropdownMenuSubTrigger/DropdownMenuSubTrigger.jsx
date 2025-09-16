@@ -19,7 +19,9 @@ DropdownMenuSubTrigger.propTypes = {
    * @uxpinignoreprop
    */
   asChild: PropTypes.bool,
-  /** Additional CSS classes for styling. */
+  /** Additional CSS classes for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** Child components to render inside the DropdownMenuTrigger. */
   children: PropTypes.node,

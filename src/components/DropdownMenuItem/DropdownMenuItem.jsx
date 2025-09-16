@@ -23,7 +23,9 @@ DropdownMenuItem.propTypes = {
   disabled: PropTypes.bool,
   /** Event handler called when the user selects an item. */
   onSelect: PropTypes.func,
-  /** Additional CSS classes for styling. */
+  /** Additional CSS classes for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** Child components to render inside the DropdownMenuItem. */
   children: PropTypes.node,

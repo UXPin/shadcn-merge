@@ -18,7 +18,9 @@ DropdownMenuShortcut.propTypes = {
   /** The shortcut text */
   children: PropTypes.node.isRequired,
 
-  /** Additional class names for styling */
+  /** Additional class names for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

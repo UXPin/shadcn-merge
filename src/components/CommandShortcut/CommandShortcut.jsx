@@ -17,7 +17,9 @@ const CommandShortcut = ({ children, className, ...props }) => {
 CommandShortcut.propTypes = {
   /** CommandShortcut content */
   children: PropTypes.node,
-  /** Additional className for styling */
+  /** Additional className for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

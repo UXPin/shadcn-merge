@@ -16,6 +16,9 @@ const SheetDescription = ({ children, className, ...props }) => {
 
 SheetDescription.propTypes = {
   children: PropTypes.node,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

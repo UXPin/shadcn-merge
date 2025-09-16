@@ -16,6 +16,9 @@ const ContextMenuShortcut = ({ children, className, ...props }) => {
 
 ContextMenuShortcut.propTypes = {
   children: PropTypes.node,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

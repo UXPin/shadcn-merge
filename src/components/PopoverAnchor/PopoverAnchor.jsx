@@ -17,7 +17,9 @@ const PopoverAnchor = ({ children, className, ...props }) => {
 PopoverAnchor.propTypes = {
   /** Content children components. */
   children: PropTypes.node,
-  /** Additional classes to style the  component. */
+  /** Additional classes to style the  component.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

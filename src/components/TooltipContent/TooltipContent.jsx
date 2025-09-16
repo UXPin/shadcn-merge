@@ -54,7 +54,9 @@ TooltipContent.propTypes = {
       left: PropTypes.number,
     }),
   ]),
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

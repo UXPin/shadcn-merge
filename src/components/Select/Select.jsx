@@ -17,7 +17,9 @@ const Select = ({ children, className, ...props }) => {
 Select.propTypes = {
   /** The content of DialogClose. */
   children: PropTypes.node,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** The value of the select when initially rendered. Use when you do not need to control the state. */
   defaultValue: PropTypes.string,

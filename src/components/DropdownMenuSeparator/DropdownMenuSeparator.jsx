@@ -15,7 +15,9 @@ DropdownMenuSeparator.propTypes = {
    * @uxpinignoreprop
    */
   asChild: PropTypes.bool,
-  /** Additional CSS classes for styling. */
+  /** Additional CSS classes for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

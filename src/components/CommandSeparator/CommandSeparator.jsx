@@ -13,7 +13,9 @@ const CommandSeparator = (props) => {
 CommandSeparator.propTypes = {
   /** Always render even when filtering */
   alwaysRender: PropTypes.bool,
-  /** Additional className for styling */
+  /** Additional className for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

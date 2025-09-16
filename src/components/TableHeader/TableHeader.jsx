@@ -17,7 +17,9 @@ const TableHeader = ({ children, className, ...props }) => {
 TableHeader.propTypes = {
   /** The content of the TableHeader. */
   children: PropTypes.node.isRequired,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

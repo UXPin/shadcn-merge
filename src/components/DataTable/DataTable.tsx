@@ -19,6 +19,9 @@ import {
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[]
   data: TData[]
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: string;
 }
 

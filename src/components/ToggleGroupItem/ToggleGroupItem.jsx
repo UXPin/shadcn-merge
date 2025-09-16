@@ -25,7 +25,9 @@ ToggleGroupItem.propTypes = {
   value: PropTypes.string,
   /** When true, prevents the user from interacting with the toggle. */
   disabled: PropTypes.bool,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

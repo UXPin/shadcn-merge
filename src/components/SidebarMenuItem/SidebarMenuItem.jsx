@@ -18,7 +18,9 @@ const SidebarMenuItem = ({ children, className, ...props }) => {
 SidebarMenuItem.propTypes = {
   /** Menu item children */
   children: PropTypes.node,
-  /** Additional CSS class for styling */
+  /** Additional CSS class for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

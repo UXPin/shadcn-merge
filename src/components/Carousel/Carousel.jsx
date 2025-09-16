@@ -23,7 +23,9 @@ Carousel.propTypes = {
   plugins: PropTypes.array,
   /** Callback to expose the Embla carousel API. */
   setApi: PropTypes.func,
-  /** Additional className for wrapper. */
+  /** Additional className for wrapper.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** Children elements. */
   children: PropTypes.node,

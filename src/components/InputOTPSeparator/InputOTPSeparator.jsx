@@ -11,7 +11,9 @@ const InputOTPSeparator = ({ children, className, ...props }) => {
 };
 
 InputOTPSeparator.propTypes = {
-  /** Additional className for styling */
+  /** Additional className for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

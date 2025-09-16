@@ -21,7 +21,9 @@ TabsTrigger.propTypes = {
   value: PropTypes.string,
   /** Whether the tab is disabled. */
   disabled: PropTypes.bool,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

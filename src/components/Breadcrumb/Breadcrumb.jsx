@@ -19,7 +19,9 @@ Breadcrumb.propTypes = {
   children: PropTypes.node,
   /** Custom separator to render between breadcrumb items. */
   separator: PropTypes.node,
-  /** Additional class names for styling. */
+  /** Additional class names for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

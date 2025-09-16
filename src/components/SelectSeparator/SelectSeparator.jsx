@@ -11,7 +11,9 @@ const SelectSeparator = (props) => {
 };
 
 SelectSeparator.propTypes = {
-  /** Additional classes to style the  component. */
+  /** Additional classes to style the  component.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

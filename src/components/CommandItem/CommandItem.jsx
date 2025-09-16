@@ -27,7 +27,9 @@ CommandItem.propTypes = {
   onSelect: PropTypes.func,
   /** Force render even if filtered out */
   forceMount: PropTypes.bool,
-  /** Additional className for styling */
+  /** Additional className for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

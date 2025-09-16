@@ -11,7 +11,9 @@ const BreadcrumbEllipsis = ({ children, className, ...props }) => {
 };
 
 BreadcrumbEllipsis.propTypes = {
-  /** Additional class names for styling. */
+  /** Additional class names for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

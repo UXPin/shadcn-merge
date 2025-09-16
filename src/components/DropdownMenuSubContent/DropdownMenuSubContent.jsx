@@ -18,7 +18,9 @@ DropdownMenuSubContent.propTypes = {
   /** The content inside the sub-menu */
   children: PropTypes.node.isRequired,
 
-  /** Additional class names for styling */
+  /** Additional class names for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

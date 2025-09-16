@@ -18,6 +18,9 @@ const SidebarMenuSubItem = ({ children, className, ...props }) => {
 SidebarMenuSubItem.propTypes = {
   /** Submenu item content */
   children: PropTypes.node,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

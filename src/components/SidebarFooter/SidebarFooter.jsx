@@ -16,7 +16,9 @@ const SidebarFooter = ({ children, className, ...props }) => {
 };
 
 SidebarFooter.propTypes = {
-  /** Additional CSS class for styling */
+  /** Additional CSS class for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** Footer children */
   children: PropTypes.node,

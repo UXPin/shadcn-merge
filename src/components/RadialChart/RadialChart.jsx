@@ -66,5 +66,8 @@ RadialChart.propTypes = {
   maxValue: PropTypes.number,
   enableLegend: PropTypes.bool,
   enableTooltip: PropTypes.bool,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };

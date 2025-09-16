@@ -18,7 +18,9 @@ DrawerClose.propTypes = {
   /** Content inside the close button */
   children: PropTypes.node,
 
-  /** Additional class names for styling */
+  /** Additional class names for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

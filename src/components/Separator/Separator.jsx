@@ -19,7 +19,9 @@ Separator.propTypes = {
   orientation: PropTypes.oneOf(['horizontal', 'vertical']),
   /** Whether or not the component is purely decorative. When true, accessibility-related attributes are updated so that the rendered element is removed from the accessibility tree. */
   decorative: PropTypes.bool,
-  /** Additional CSS class for styling */
+  /** Additional CSS class for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

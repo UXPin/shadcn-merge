@@ -25,7 +25,9 @@ InputOTP.propTypes = {
   onChange: PropTypes.func,
   /** Called when input reaches max length */
   onComplete: PropTypes.func,
-  /** Additional className for styling */
+  /** Additional className for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

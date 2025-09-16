@@ -17,7 +17,9 @@ const FormLabel = ({ children, className, ...props }) => {
 FormLabel.propTypes = {
   /** Label text or node */
   children: PropTypes.node,
-  /** Additional class name for styling the label */
+  /** Additional class name for styling the label
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** ID to associate the label with input */
   htmlFor: PropTypes.string,

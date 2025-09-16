@@ -17,7 +17,9 @@ const TabsList = ({ children, className, ...props }) => {
 TabsList.propTypes = {
   /** Child tab triggers. */
   children: PropTypes.node,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

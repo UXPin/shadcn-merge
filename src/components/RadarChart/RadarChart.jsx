@@ -59,5 +59,8 @@ RadarChart.propTypes = {
   outerRadius: PropTypes.number,
   enableLegend: PropTypes.bool,
   enableTooltip: PropTypes.bool,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };

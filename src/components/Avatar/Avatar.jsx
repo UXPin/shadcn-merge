@@ -18,7 +18,9 @@ Avatar.propTypes = {
   /** The child components (AvatarImage, AvatarFallback) inside the Avatar container */
   children: PropTypes.node,
 
-  /** Additional class names for styling */
+  /** Additional class names for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

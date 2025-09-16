@@ -11,7 +11,9 @@ const PaginationEllipsis = React.forwardRef((props, ref) => (
 PaginationEllipsis.propTypes = {
   /** The content inside the pagination item. */
   children: PropTypes.node,
-  /** Additional classes to style the  component. */
+  /** Additional classes to style the  component.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

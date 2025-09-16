@@ -26,7 +26,9 @@ SidebarProvider.propTypes = {
   open: PropTypes.bool,
   /** Callback for open state change */
   onOpenChange: PropTypes.func,
-  /** Additional CSS class for styling */
+  /** Additional CSS class for styling
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** Inline style object */
   style: PropTypes.object,

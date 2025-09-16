@@ -16,6 +16,9 @@ const FormField = ({ children, className, ...props }) => {
 
 FormField.propTypes = {
   children: PropTypes.node,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

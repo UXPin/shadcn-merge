@@ -35,7 +35,9 @@ DialogContent.propTypes = {
   onFocusOutside: PropTypes.func,
   /** Event handler called when a pointer event occurs outside the content. Can be prevented. */
   onPointerDownOutside: PropTypes.func,
-  /** Additional className for styling. */
+  /** Additional className for styling.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

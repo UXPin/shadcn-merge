@@ -27,6 +27,9 @@ ContextMenuCheckboxItem.propTypes = {
   checked: PropTypes.bool,
   /** Callback fired when the checked state changes. */
   onCheckedChange: PropTypes.func,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 

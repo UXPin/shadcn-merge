@@ -25,7 +25,9 @@ HtmlList.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
 
-  // /** Add Bootstrap classes */
+ /** Add Bootstrap classes
+  * @uxpincontroltype tailwindclassname
+  */
   className: PropTypes.string,
 
   // /** Override styles */

@@ -26,6 +26,9 @@ const Dialog = (props) => {
 
 Dialog.propTypes = {
   children: PropTypes.node,
+  /**
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
   /** The controlled open state of the dialog.
    * @uxpinbind onOpenChange 0

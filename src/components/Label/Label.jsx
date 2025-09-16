@@ -19,7 +19,9 @@ Label.propTypes = {
   /** The ID of the control to which the label is associated. */
   htmlFor: PropTypes.string,
 
-  /** Additional classes to style the label. */
+  /** Additional classes to style the label.
+   * @uxpincontroltype tailwindclassname
+   */
   className: PropTypes.string,
 };
 
