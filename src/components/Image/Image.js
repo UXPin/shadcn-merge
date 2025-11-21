@@ -16,6 +16,7 @@ const Image = (props) => {
         'object-fit': props.fit,
         width: props.width,
         height: props.height,
+        ...(props.style || {}),
       }}
     />
   );
